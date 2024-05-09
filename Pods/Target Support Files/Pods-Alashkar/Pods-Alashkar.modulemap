@@ -1,0 +1,6 @@
+framework module Pods_Alashkar {
+  umbrella header "Pods-Alashkar-umbrella.h"
+
+  export *
+  module * { export * }
+}
