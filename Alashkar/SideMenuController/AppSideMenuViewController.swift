@@ -75,12 +75,12 @@ class AppSideMenuViewController: UIViewController {
         }, with: "0")
         
         sideMenuController?.cache(viewControllerGenerator: {
-            self.storyboard?.instantiateViewController(withIdentifier: "ProfileViewController")
+            self.storyboard?.instantiateViewController(withIdentifier: "EditProfileViewController")
             
         }, with: "1")
         
         sideMenuController?.cache(viewControllerGenerator: {
-            self.storyboard?.instantiateViewController(withIdentifier: "AboutUsViewController")
+            self.storyboard?.instantiateViewController(withIdentifier: "PrivacyPolicyViewController")
         }, with: "2")
         
         sideMenuController?.cache(viewControllerGenerator: {
@@ -88,11 +88,11 @@ class AppSideMenuViewController: UIViewController {
         }, with: "3")
         
         sideMenuController?.cache(viewControllerGenerator: {
-            self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController")
+            self.storyboard?.instantiateViewController(withIdentifier: "PrivacyPolicyViewController")
         }, with: "4")
         
         sideMenuController?.cache(viewControllerGenerator: {
-            self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController")
+            self.storyboard?.instantiateViewController(withIdentifier: "PrivacyPolicyViewController")
         }, with: "5")
     }
     
@@ -186,7 +186,7 @@ extension AppSideMenuViewController: UITableViewDelegate, UITableViewDataSource 
                 if let identifier = sideMenuController?.currentCacheIdentifier() {
                     print("[Example] View Controller Cache Identifier: \(identifier)")
                 }
-        case 5:
+        case 6:
             sideMenuController?.hideMenu()
             objAlert.showAlertCallBack(alertLeftBtn: "YES", alertRightBtn: "No", title: "Logout?", message: "Are you sure you want to logout?", controller: self) {
                 AppSharedData.sharedObject().signOut()
