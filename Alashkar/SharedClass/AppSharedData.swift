@@ -39,6 +39,14 @@ class AppSharedData: NSObject {
     var userType = ""
     
     
+    var year = "Jahr :- "
+    var registration = "Anmeldung :- "
+    var lastService = "Letzter Service :- "
+    var nextService = "Update Service :- "
+    
+    var currentLanguage = ""
+    
+    
     open var isLoggedIn: Bool {
         get {
             if (UserDefaults.standard.value(forKey:  UserDefaults.KeysDefault.userInfo) as? [String : Any]) != nil {

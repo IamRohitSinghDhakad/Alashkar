@@ -45,6 +45,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         IQKeyboardManager.shared.enableAutoToolbar = true
         IQKeyboardManager.shared.shouldResignOnTouchOutside = true
         
+        // Determine user's preferred language
+        let preferredLanguage = LocalizationSystem.sharedInstance.getLanguage()
+        
+        // Check if the language is Arabic
+        if preferredLanguage.lowercased().hasPrefix("ar") {
+            // Set app layout to right-to-left
+            UIView.appearance().semanticContentAttribute = .forceRightToLeft
+        } else {
+            // Set app layout to left-to-right (default)
+            UIView.appearance().semanticContentAttribute = .forceLeftToRight
+        }
+        
         self.settingRootController()
         
         return true

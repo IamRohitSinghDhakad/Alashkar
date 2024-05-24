@@ -1,0 +1,159 @@
+
+/* Class = "UIButton"; normalTitle = "AKTUALISIEREN"; ObjectID = "23u-Qx-HIz"; */
+"23u-Qx-HIz.normalTitle" = "AKTUALISIEREN";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "2E2-hv-5Ef"; */
+"2E2-hv-5Ef.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "30g-Ik-vgg"; */
+"30g-Ik-vgg.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "SUBMIT"; ObjectID = "3Kh-8u-gVv"; */
+"3Kh-8u-gVv.normalTitle" = "SUBMIT";
+
+/* Class = "UILabel"; text = "Arabisch"; ObjectID = "5ED-rh-N0P"; */
+"5ED-rh-N0P.text" = "Arabisch";
+
+/* Class = "UITextField"; placeholder = "Handynummer oder E-Mail Adresse"; ObjectID = "6YX-l0-Zpz"; */
+"6YX-l0-Zpz.placeholder" = "Handynummer oder E-Mail Adresse";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "7Ok-Sd-b7k"; */
+"7Ok-Sd-b7k.text" = "Label";
+
+/* Class = "UILabel"; text = "E-Mail Adresse"; ObjectID = "A63-YZ-p7h"; */
+"A63-YZ-p7h.text" = "E-Mail Adresse";
+
+/* Class = "UITextField"; placeholder = "Passwort"; ObjectID = "BBP-n6-wnN"; */
+"BBP-n6-wnN.placeholder" = "Passwort";
+
+/* Class = "UITextField"; placeholder = "Handynummer"; ObjectID = "BKM-8V-RUa"; */
+"BKM-8V-RUa.placeholder" = "Handynummer";
+
+/* Class = "UILabel"; text = "Handynummer"; ObjectID = "EH4-vG-fIz"; */
+"EH4-vG-fIz.text" = "Handynummer";
+
+/* Class = "UITextField"; placeholder = "Handynummer oder E-Mail Adresse"; ObjectID = "G21-ej-PHB"; */
+"G21-ej-PHB.placeholder" = "Handynummer oder E-Mail Adresse";
+
+/* Class = "UILabel"; text = "Keine Sorgel geben Sie unten Ihre E-Mail-Adresse ein und wir senden Ihnen ein neues Kennwort zu"; ObjectID = "ISb-vU-Pf1"; */
+"ISb-vU-Pf1.text" = "Keine Sorgel geben Sie unten Ihre E-Mail-Adresse ein und wir senden Ihnen ein neues Kennwort zu";
+
+/* Class = "UILabel"; text = "melden Sie sich jetzt an"; ObjectID = "J2o-jp-IYN"; */
+"J2o-jp-IYN.text" = "melden Sie sich jetzt an";
+
+/* Class = "UIButton"; normalTitle = "Registrieren"; ObjectID = "J7l-G8-7AX"; */
+"J7l-G8-7AX.normalTitle" = "Registrieren";
+
+/* Class = "UITextField"; placeholder = "Name"; ObjectID = "Kuo-Xf-GO0"; */
+"Kuo-Xf-GO0.placeholder" = "Name";
+
+/* Class = "UILabel"; text = "Hey, don't hesitate to ask anything we are always here for your help"; ObjectID = "O1Y-Tp-wTU"; */
+"O1Y-Tp-wTU.text" = "Hey, don't hesitate to ask anything we are always here for your help";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "OEJ-RV-2Nn"; */
+"OEJ-RV-2Nn.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Passwort"; ObjectID = "P2S-Vc-INJ"; */
+"P2S-Vc-INJ.placeholder" = "Passwort";
+
+/* Class = "UILabel"; text = "Deutsch"; ObjectID = "Q3r-Uc-AiJ"; */
+"Q3r-Uc-AiJ.text" = "Deutsch";
+
+/* Class = "UIButton"; normalTitle = "Passwort vergessen ?"; ObjectID = "ROC-A0-N10"; */
+"ROC-A0-N10.normalTitle" = "Passwort vergessen ?";
+
+/* Class = "UILabel"; text = "Fugen Sie Ihr Profifoto hinzu"; ObjectID = "Rmf-Ui-6fD"; */
+"Rmf-Ui-6fD.text" = "Fugen Sie Ihr Profifoto hinzu";
+
+/* Class = "UITextField"; placeholder = "Handynummer oder E-Mail Adresse"; ObjectID = "S7v-xf-XKP"; */
+"S7v-xf-XKP.placeholder" = "Handynummer oder E-Mail Adresse";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "SGp-T3-78b"; */
+"SGp-T3-78b.text" = "Label";
+
+/* Class = "UILabel"; text = "Subject"; ObjectID = "YPV-97-q8J"; */
+"YPV-97-q8J.text" = "Subject";
+
+/* Class = "UILabel"; text = "Vehicle Variant"; ObjectID = "ZMf-PT-VFC"; */
+"ZMf-PT-VFC.text" = "Vehicle Variant";
+
+/* Class = "UITextField"; placeholder = "E-Mail Adresse"; ObjectID = "aFg-ld-YH7"; */
+"aFg-ld-YH7.placeholder" = "E-Mail Adresse";
+
+/* Class = "UIButton"; normalTitle = "Contact With Email"; ObjectID = "cyz-xz-urx"; */
+"cyz-xz-urx.normalTitle" = "Contact With Email";
+
+/* Class = "UILabel"; text = "Vehicle Registration Number"; ObjectID = "eAI-DA-Csp"; */
+"eAI-DA-Csp.text" = "Vehicle Registration Number";
+
+/* Class = "UILabel"; text = "CONTACT US"; ObjectID = "fZL-tp-3fi"; */
+"fZL-tp-3fi.text" = "CONTACT US";
+
+/* Class = "UILabel"; text = "Home"; ObjectID = "fgs-lL-snE"; */
+"fgs-lL-snE.text" = "Home";
+
+/* Class = "UIButton"; normalTitle = "Anmelden"; ObjectID = "g1r-7h-6Ra"; */
+"g1r-7h-6Ra.normalTitle" = "Anmelden";
+
+/* Class = "UILabel"; text = "Uber UNS"; ObjectID = "kIu-Rs-3cT"; */
+"kIu-Rs-3cT.text" = "Uber UNS";
+
+/* Class = "UIButton"; normalTitle = "Contact With Mobile"; ObjectID = "knV-wZ-Fmr"; */
+"knV-wZ-Fmr.normalTitle" = "Contact With Mobile";
+
+/* Class = "UILabel"; text = "Language"; ObjectID = "kzJ-QT-fd6"; */
+"kzJ-QT-fd6.text" = "Language";
+
+/* Class = "UITextField"; placeholder = "Name"; ObjectID = "mPl-nt-Zfd"; */
+"mPl-nt-Zfd.placeholder" = "Name";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "oPA-wz-D5M"; */
+"oPA-wz-D5M.text" = "Label";
+
+/* Class = "UILabel"; text = "Sie haben noch kein Konto ? jetzt registrieren, es ist kostenlos."; ObjectID = "pbk-dK-S49"; */
+"pbk-dK-S49.text" = "Sie haben noch kein Konto ? jetzt registrieren, es ist kostenlos.";
+
+/* Class = "UIButton"; normalTitle = "SUBMIT"; ObjectID = "q6w-L8-wgD"; */
+"q6w-L8-wgD.normalTitle" = "SUBMIT";
+
+/* Class = "UILabel"; text = "Add Vehicle"; ObjectID = "qyw-Gr-zVL"; */
+"qyw-Gr-zVL.text" = "Add Vehicle";
+
+/* Class = "UILabel"; text = "Select Langauge"; ObjectID = "rbW-x2-LhP"; */
+"rbW-x2-LhP.text" = "Select Langauge";
+
+/* Class = "UILabel"; text = "Passwort vergessen? "; ObjectID = "sAw-BI-y8B"; */
+"sAw-BI-y8B.text" = "Passwort vergessen? ";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "smY-fr-zPf"; */
+"smY-fr-zPf.text" = "Label";
+
+/* Class = "UILabel"; text = "Vehicle Model Year"; ObjectID = "tBD-MC-4eV"; */
+"tBD-MC-4eV.text" = "Vehicle Model Year";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "thN-10-jV4"; */
+"thN-10-jV4.text" = "Label";
+
+/* Class = "UILabel"; text = "Vehicle Model"; ObjectID = "ty0-cF-nh5"; */
+"ty0-cF-nh5.text" = "Vehicle Model";
+
+/* Class = "UILabel"; text = "vollstandiger Name"; ObjectID = "wcS-4L-O0m"; */
+"wcS-4L-O0m.text" = "vollstandiger Name";
+
+/* Class = "UILabel"; text = "Message"; ObjectID = "wwO-x6-ehf"; */
+"wwO-x6-ehf.text" = "Message";
+
+/* Class = "UIButton"; normalTitle = "senden"; ObjectID = "x3C-dX-2jd"; */
+"x3C-dX-2jd.normalTitle" = "senden";
+
+/* Class = "UILabel"; text = "Vehicle Brand"; ObjectID = "xxo-6k-48t"; */
+"xxo-6k-48t.text" = "Vehicle Brand";
+
+/* Class = "UITextField"; placeholder = "Name"; ObjectID = "ytB-Q7-9Xz"; */
+"ytB-Q7-9Xz.placeholder" = "Name";
+
+/* Class = "UILabel"; text = "zur Anmeldung"; ObjectID = "yvq-K5-1ov"; */
+"yvq-K5-1ov.text" = "zur Anmeldung";
+
+/* Class = "UILabel"; text = "EDIT PROFILE"; ObjectID = "zlX-kg-YLK"; */
+"zlX-kg-YLK.text" = "EDIT PROFILE";

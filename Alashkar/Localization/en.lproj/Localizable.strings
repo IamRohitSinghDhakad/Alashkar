@@ -1,0 +1,84 @@
+/* 
+  Localizable.strings
+  Alashkar
+
+  Created by Rohit SIngh Dhakad on 13/05/24.
+  
+*/
+"Email Or Mobile Number" = "Email Or Mobile Number";
+"Password" = "Password";
+"Log In" = "Log In";
+"Forgot Password?" = "Forgot Password?";
+"Sign Up Now" = "Sign Up Now";
+"Back To Login" = "Back To Login";
+"Send" = "Send";
+"No worries, We'll send you\nnew password on your emaill address" = "No worries, We'll send you\nnew password on your emaill address";
+"Enter Your Email" = "Enter Your Email";
+"Log In Now" = "Log In Now";
+"Home" = "Home";
+"Profile" = "Profile";
+"About Us" = "About Us";
+"Contact Us" = "Contact Us";
+"Language" = "Language";
+"Privacy Policy" = "Privacy Policy";
+"Log Out" = "Log Out";
+"Yes" = "Yes";
+"No" = "No";
+"Do you want to log out?" = "Do you want to log out?";
+"Hey, don't hesitate to ask anything we are always here for your help" = "Hey, don't hesitate to ask anything we are always here for your help";
+"Subject" = "Subject";
+"Message" = "Message";
+"Submit" = "Submit";
+"Set your picture" = "Set your picture";
+"Full Name" = "Full Name";
+"Email" = "Email";
+"Phone Number" = "Phone Number";
+"UPDATE" = "UPDATE";
+"Add Vehicle" = "Add Vehicle";
+"Vehicle Brand" = "Vehicle Brand";
+"Vehicle Model" = "Vehicle Model";
+"Vehicle Variant" = "Vehicle Variant";
+"Vehicle Model Year" = "Vehicle Model Year";
+"Vehicle Registration Number" = "Vehicle Registration Number";
+"Select Language" = "Select Language";
+"German" = "German";
+"Arabic" = "Arabic";
+"Somthing is wrong!!!" = "Somthing is wrong!!!";
+"Check Internet Connection" = "Check Internet Connection";
+"Enter Email/Mobile" = "Enter Email/Mobile";
+"Enter Password" = "Enter Password";
+"Enter Email Address" = "Enter Email Address";
+"Email Address" = "Email Address";
+"Mobile Number" = "Mobile Number";
+"Sign Up" = "Sign Up";
+"Enter Full Name" = "Enter Full Name";
+"Enter Mobile" = "Enter Mobile";
+"Enter Subject" = "Enter Subject";
+"Enter Message" = "Enter Message";
+"Enter Brand" = "Enter Brand";
+"Enter Model" = "Enter Model";
+"Enter Variant" = "Enter Variant";
+"Enter Model Year" = "Enter Model Year";
+"Enter Registration Number" = "Enter Registration Number";
+"Edit Vehicle" = "Edit Vehicle";
+"Thankyou, Our Support Team Will Contact You" = "Thankyou, Our Support Team Will Contact You";
+"Success" = "Success";
+"No Vehicle Added Yet!!!" = "No Vehicle Added Yet!!!";
+"Are you sure, you want to delete?" = "Are you sure, you want to delete?";
+"Contact With Email" = "Contact With Email";
+"Contact With Mobile" = "Contact With Mobile";
+"Registration :-" = "Registration :-";
+"Year :-" = "Year :-";
+"Last Service :-" = "Last Service :-";
+"Last Service :- NA" = "Last Service :- NA";
+"Update Service :-" = "Update Service :-";
+"Update Service :-NA" = "Update Service :-NA";
+"Kraftstoffart" = "Kraftstoffart";
+"HSN" = "HSN";
+"TSN" = "TSN";
+"Select Kraftstoffart" = "Select Kraftstoffart";
+"Enter HSN" = "Enter HSN";
+"Enter TSN" = "Enter TSN";
+"Add your professional photo" = "Add your professional photo";
+"German" = "German";
+"Arabic" = "Arabic";

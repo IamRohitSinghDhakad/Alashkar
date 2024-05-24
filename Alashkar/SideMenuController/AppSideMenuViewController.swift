@@ -32,13 +32,13 @@ class AppSideMenuViewController: UIViewController {
     var selectedIndexpath = 0
     var strBadgeCount = ""
     
-    private let menus: [SideMenuOptions] = [SideMenuOptions(menuName: "Home", menuImageName: "", menuSelectedImageName: ""),
-                                            SideMenuOptions(menuName: "Konto", menuImageName: "", menuSelectedImageName: ""),
-                                            SideMenuOptions(menuName: "Uber Uns", menuImageName: "", menuSelectedImageName: ""),
-                                            SideMenuOptions(menuName: "Kontact", menuImageName: "", menuSelectedImageName: ""),
-                                            SideMenuOptions(menuName: "Sprache", menuImageName: "", menuSelectedImageName: ""),
-                                            SideMenuOptions(menuName: "Datenschutz", menuImageName: "", menuSelectedImageName: ""),
-                                            SideMenuOptions(menuName: "Ausloggen", menuImageName: "", menuSelectedImageName: "")]
+    private let menus: [SideMenuOptions] = [SideMenuOptions(menuName: "Home".localized(), menuImageName: "", menuSelectedImageName: ""),
+                                            SideMenuOptions(menuName: "Profile".localized(), menuImageName: "", menuSelectedImageName: ""),
+                                            SideMenuOptions(menuName: "About Us".localized(), menuImageName: "", menuSelectedImageName: ""),
+                                            SideMenuOptions(menuName: "Contact Us".localized(), menuImageName: "", menuSelectedImageName: ""),
+                                            SideMenuOptions(menuName: "Language".localized(), menuImageName: "", menuSelectedImageName: ""),
+                                            SideMenuOptions(menuName: "Privacy Policy".localized(), menuImageName: "", menuSelectedImageName: ""),
+                                            SideMenuOptions(menuName: "Log Out".localized(), menuImageName: "", menuSelectedImageName: "")]
     
     
     //MARK: - Override Methods
@@ -88,7 +88,7 @@ class AppSideMenuViewController: UIViewController {
         }, with: "3")
         
         sideMenuController?.cache(viewControllerGenerator: {
-            self.storyboard?.instantiateViewController(withIdentifier: "PrivacyPolicyViewController")
+            self.storyboard?.instantiateViewController(withIdentifier: "SelectLanguageViewController")
         }, with: "4")
         
         sideMenuController?.cache(viewControllerGenerator: {
@@ -188,7 +188,7 @@ extension AppSideMenuViewController: UITableViewDelegate, UITableViewDataSource 
                 }
         case 6:
             sideMenuController?.hideMenu()
-            objAlert.showAlertCallBack(alertLeftBtn: "YES", alertRightBtn: "No", title: "Logout?", message: "Are you sure you want to logout?", controller: self) {
+            objAlert.showAlertCallBack(alertLeftBtn: "Yes".localized(), alertRightBtn: "No".localized(), title: "Logout?".localized(), message: "Do you want to log out?".localized(), controller: self) {
                 AppSharedData.sharedObject().signOut()
             }
         default:

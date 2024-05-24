@@ -7,16 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "4AF1A317-AAFD-4D87-B94F-B088AD265471"
+            uuid = "F65B81DE-3161-42A8-8659-AD4C2E439CC7"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Alashkar/Home/HomeViewController.swift"
+            filePath = "Alashkar/Auth/SignUpViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "btnOnOpenSideMenu(_:)"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
+            landmarkName = "call_WsSignUp()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

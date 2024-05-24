@@ -10,24 +10,29 @@ import UIKit
 
 
 
-//let BASE_URL = "https://ambitious.in.net/Shubham/know/index.php/api/"//Local
-let BASE_URL = "https://knowapp.co/admin/index.php/api/"//Live
-let BASE_URL_for_policy = "https://knowapp.co/admin/index.php/site/"//Live
+let BASE_URL = "https://ambitious.in.net/Arun/alashkar/index.php/api/"//Local
+//let BASE_URL = "https://knowapp.co/admin/index.php/api/"//Live
+//let BASE_URL_for_policy = "https://knowapp.co/admin/index.php/site/"//Live
 let imageBaseUrl = "https://gms.mursko-sredisce.hr/"
 
 
 struct WsUrl{
     
     static let url_SignUp  = BASE_URL + "signup?"
-    static let url_getUserProfile  = BASE_URL + "get_profile?user_id="
+    static let url_GetVehicle = BASE_URL + "get_vehicle"
+    static let url_getUserProfile  = BASE_URL + "get_profile"
     static let url_Login  = BASE_URL + "login"
     static let url_ForgotPassword = BASE_URL + "forgot_password"
+    static let url_ContactUs = BASE_URL + "contact_us"
+    
+    static let url_Privacy = BASE_URL + "page/Privacy"
+    static let url_About = BASE_URL + "page/About"
+    
+    
     static let url_GetCategory = BASE_URL + "get_category"
     static let url_GetSubCategory = BASE_URL + "get_sub_category"
     static let url_getQuestion = BASE_URL + "get_question"
-    static let url_GetAnswer = BASE_URL + "get_answer"
     static let url_GetEvent = BASE_URL + "get_events"
-    static let url_ContactUs = BASE_URL + "contact_us"
     static let url_GetArticle = BASE_URL + "get_article"
     static let url_UpdateProfile = BASE_URL + "update_profile"
     static let url_GetLikedPost = BASE_URL + "get_liked_posts"
@@ -36,9 +41,6 @@ struct WsUrl{
     static let url_GetNotofication = BASE_URL + "get_notification"
     static let url_UpdateAppointment = BASE_URL + "update_appointment"
     static let url_GetStore = BASE_URL + "get_stores"
-    static let url_Privacy = BASE_URL_for_policy + "page/Privacy"
-    static let url_Terms = BASE_URL_for_policy + "page/Terms"
-    
     static let url_GetQuizQuestions = BASE_URL + "get_quiz?category_id="
     static let url_SubmitQuizAnswers = BASE_URL + "submit_quiz_answer"
     static let url_GetTopic = BASE_URL + "get_topic"

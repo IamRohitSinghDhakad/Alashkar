@@ -1,0 +1,84 @@
+/* 
+  Localizable.strings
+  Alashkar
+
+  Created by Rohit SIngh Dhakad on 13/05/24.
+  
+*/
+"Email Or Mobile Number" = "رقم الجوال أو البريد الإلكتروني";
+"Password" = "كلمة السر";
+"Log In" = "تسجيل الدخول";
+"Forgot Password?" = "نسيت كلمة المرور؟";
+"Sign Up Now" = "ليس لديك حساب؟ إذن انضم لنا مجاناً";
+"Back To Login" = "عودة إلى تسجيل الدخول";
+"Send" = "إرسال";
+"No worries, We'll send you\nnew password on your emaill address" = "سوف نرسل لك كلمة مرور جديدة على بريدك الإلكتروني";
+"Enter Your Email" = "ادخل بريدك الإلكتروني";
+"Log In Now" = "سجل الآن";
+"Home" = "الصفحة الرئيسية";
+"Profile" = "الحساب";
+"About Us" = "نبذة عنا";
+"Contact Us" = "الاتصال بنا";
+"Language" = "اللغات";
+"Privacy Policy" = "إشعار الخصوصية";
+"Log Out" = "تسجيل خروج";
+"Yes" = "نعم";
+"No" = "لا";
+"Do you want to log out?" = "هل تريد بالفعل تسجيل الخروج؟";
+"Hey, don't hesitate to ask anything we are always here for your help" = "‏إذا كانت لديكم أية استفسارات لا تترددوا في التواصل معنا";
+"Subject" = "الموضوع";
+"Message" = "الرسالة";
+"Submit" = "إرسال";
+"Set your picture" = "أضف صورة شخصية";
+"Full Name" = "الاسم الكامل";
+"Email" = "البريد الإلكتروني";
+"Phone Number" = "رقم الجوال";
+"UPDATE" = "تحديث";
+"Add Vehicle" = "إضافة مركبة";
+"Vehicle Brand" = "نوع المركبة";
+"Vehicle Model" = "موديل المركبة";
+"Vehicle Variant" = "هيكل المركبة";
+"Vehicle Model Year" = "سنة الصنع";
+"Vehicle Registration Number" = "FIN الرقم التعريفي للمركبة";
+"Select Language" = "اختيار اللغة";
+"German" = "الألمانية";
+"Arabic" = "العربية";
+"Somthing is wrong!!!" = "حدث خطأ ما. الرجاء الانتظار";
+"Check Internet Connection" = "تحقق من اتصالك بالإنترنت";
+"Enter Email/Mobile" = "أضف بريدك الإلكتروني أو رقم جوالك";
+"Enter Password" = "أضف كلمة مرور";
+"Enter Email Address" = "أضف بريدك الإلكتروني";
+"Email Address" = "البريد الإلكتروني";
+"Mobile Number" = "رقم الجوال";
+"Sign Up" = "التسجيل";
+"Enter Full Name" = "أضف اسمك الكامل";
+"Enter Mobile" = "أضف رقم جوالك";
+"Enter Subject" = "اكتب موضوع الرسالة";
+"Enter Message" = "اكتب الرسالة";
+"Enter Brand" = "أضف نوع المركبة";
+"Enter Model" = "أضف موديل المركبة";
+"Enter Variant" = "أضف هيكل المركبة";
+"Enter Model Year" = "أضف سنة الصنع";
+"Enter Registration Number" = "أضف الرقم التعريفي للمركبة";
+"Edit Vehicle" = "تعديل المركبة";
+"Thankyou, Our Support Team Will Contact You" = "نشكرك على تواصلك معنا وثقتك بنا, سوف نتواصل معك في أقرب وقت ممكن";
+"Success" = "تم";
+"No Vehicle Added Yet!!!" = "لم يتم إضافة مركبة";
+"Are you sure, you want to delete?" = "هل أنت متأكد من مسح الرسالة؟";
+"Contact With Email" = "الإتصال عبر البريد الإلكتروني";
+"Contact With Mobile" = "الإتصال عبر الجوال";
+"Registration :-" = "تسجيل :-";
+"Year :-" = "سنة :-";
+"Last Service :-" = "الخدمة الأخيرة:-";
+"Last Service :- NA" = "الخدمة الأخيرة:- لا يوجد";
+"Update Service :-" = "تحديث الخدمة :-";
+"Update Service :-NA" = "خدمة التحديث:-غير متوفر";
+"Kraftstoffart" = "Kraftstoffart";
+"HSN" = "HSN";
+"TSN" = "TSN";
+"Select Kraftstoffart" = "الرجاء الإختيار";
+"Enter HSN" = "أدخل HSN";
+"Enter TSN" = "TSN أدخل";
+"Add your professional photo" = "أضف صورتك الاحترافية";
+"German" = "ألمانية";
+"Arabic" = "عربي";

@@ -1,0 +1,84 @@
+/* 
+  Localizable.strings
+  Alashkar
+
+  Created by Rohit SIngh Dhakad on 13/05/24.
+  
+*/
+"Email Or Mobile Number" = "Handynummer oder E-Mail Adresse";
+"Password" = "Passwort";
+"Log In" = "Anmelden";
+"Forgot Password?" = "Passwort vergessen?";
+"Sign Up Now" = "Sie haben noch kein Konto? jetzt registrieren, es ist kostenlos.";
+"Back To Login" = "zur Anmeldung";
+"Send" = "senden";
+"No worries, We'll send you\nnew password on your emaill address" = "Keine Sorge! geben Sie unten Ihre E-Mail-Adresse ein und wir senden Ihnen ein neues Kennwort zu";
+"Enter Your Email" = "geben Sie Ihre E-Mail-Adresse ein";
+"Log In Now" = "melden Sie sich jetzt an";
+"Home" = "Home";
+"Profile" = "Konto";
+"About Us" = "Über uns";
+"Contact Us" = "Kontakt";
+"Language" = "Sprache";
+"Privacy Policy" = "Datenschutz";
+"Log Out" = "Ausloggen";
+"Yes" = "Ja";
+"No" = "Nein";
+"Do you want to log out?" = "Möchten Sie sich ausloggen?";
+"Hey, don't hesitate to ask anything we are always here for your help" = "bei weiteren Fragen zögern Sie nicht uns zu kontaktieren";
+"Subject" = "Betreff";
+"Message" = "Nachricht";
+"Submit" = "Senden";
+"Set your picture" = "Fügen Sie Ihr Profilfoto hinzu";
+"Full Name" = "vollständiger Name";
+"Email" = "E-Mail Adresse";
+"Phone Number" = "Handynummer";
+"UPDATE" = "Aktualisieren";
+"Add Vehicle" = "Fahrzeug hinzufügen";
+"Vehicle Brand" = "Hersteller";
+"Vehicle Model" = "Fahrzeug Modell";
+"Vehicle Variant" = "Karosserieform";
+"Vehicle Model Year" = "Baujahr";
+"Vehicle Registration Number" = "Fahrzeug-Identifikationsnummer FIN";
+"Select Language" = "Sprache auswählen";
+"German" = "Deutsch";
+"Arabic" = "Arabisch";
+"Somthing is wrong!!!" = "Leider ist etwas schiefgelaufen!!!";
+"Check Internet Connection" = "prüfen Sie bitte Ihre Internetverbindung";
+"Enter Email/Mobile" = "geben Sie Ihre E-Mail Adresse/Handynummer ein";
+"Enter Password" = "geben Sie Ihr Passwort ein";
+"Enter Email Address" = "geben Sie Ihre E-Mail Adresse ein";
+"Email Address" = "E-Mail-Adresse";
+"Mobile Number" = "Handynummer";
+"Sign Up" = "Registrieren";
+"Enter Full Name" = "Geben Sie Ihren vollständigen Namen ein";
+"Enter Mobile" = "Geben Sie Ihre Handynummer ein";
+"Enter Subject" = "Bitte geben Sie einen Betreff an!";
+"Enter Message" = "Bitte geben Sie Ihre Nachricht an!";
+"Enter Brand" = "Hersteller eingeben";
+"Enter Model" = "Modell eingeben";
+"Enter Variant" = "Karosserieform eingeben";
+"Enter Model Year" = "Baujahr eingeben";
+"Enter Registration Number" = "Fahrzeug-Identifikationsnummer FIN eingeben";
+"Edit Vehicle" = "Fahrzeug bearbeiten";
+"Thankyou, Our Support Team Will Contact You" = "Danke schön! Wir werden Ihnen so schnell wie möglich antworten";
+"Success" = "Erledigt!";
+"No Vehicle Added Yet!!!" = "Noch kein Fahrzeug hinzugefügt!!!";
+"Are you sure, you want to delete?" = "Sind Sie sicher, dass Sie die Nachricht löschen wollen?";
+"Contact With Email" = "per E-Mail kontaktieren";
+"Contact With Mobile" = "per Handy kontaktieren";
+"Registration :-" = "Anmeldung :-";
+"Year :-" = "Jahr :-";
+"Last Service :-" = "Letzter Service: -";
+"Last Service :- NA" = "Letzter Service :- NA";
+"Update Service :-" = "Update-Service: -";
+"Update Service :-NA" = "Update-Service :-NA";
+"Kraftstoffart" = "Kraftstoffart";
+"HSN" = "HSN";
+"TSN" = "TSN";
+"Select Kraftstoffart" = "Bitte wählen";
+"Enter HSN" = "Geben Sie HSN ein";
+"Enter TSN" = "Geben Sie TSN ein";
+"Add your professional photo" = "Fügen Sie Ihr professionelles Foto hinzu";
+"German" = "Deutsch";
+"Arabic" = "Arabisch";

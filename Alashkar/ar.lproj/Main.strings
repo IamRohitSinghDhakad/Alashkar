@@ -1,0 +1,155 @@
+/* Class = "UILabel"; text = "Label"; ObjectID = "2E2-hv-5Ef"; */
+"2E2-hv-5Ef.text" = "التسمية";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "30g-Ik-vgg"; */
+"30g-Ik-vgg.text" = "التسمية";
+
+/* Class = "UIButton"; normalTitle = "SUBMIT"; ObjectID = "3Kh-8u-gVv"; */
+"3Kh-8u-gVv.normalTitle" = "إرسال";
+
+/* Class = "UILabel"; text = "Arabic"; ObjectID = "5ED-rh-N0P"; */
+"5ED-rh-N0P.text" = "العربية";
+
+/* Class = "UITextField"; placeholder = "Phone number or email address"; ObjectID = "6YX-l0-Zpz"; */
+"6YX-l0-Zpz.placeholder" = "رقم الهاتف أو عنوان البريد الإلكتروني";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "7Ok-Sd-b7k"; */
+"7Ok-Sd-b7k.text" = "التسمية";
+
+/* Class = "UILabel"; text = "Email Address"; ObjectID = "A63-YZ-p7h"; */
+"A63-YZ-p7h.text" = "عنوان البريد الإلكتروني";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "BBP-n6-wnN"; */
+"BBP-n6-wnN.placeholder" = "كلمة المرور";
+
+/* Class = "UITextField"; placeholder = "Phone number"; ObjectID = "BKM-8V-RUa"; */
+"BKM-8V-RUa.placeholder" = "رقم الهاتف";
+
+/* Class = "UILabel"; text = "Phone number"; ObjectID = "EH4-vG-fIz"; */
+"EH4-vG-fIz.text" = "رقم الهاتف";
+
+/* Class = "UITextField"; placeholder = "Phone number or email address"; ObjectID = "G21-ej-PHB"; */
+"G21-ej-PHB.placeholder" = "رقم الهاتف أو عنوان البريد الإلكتروني";
+
+/* Class = "UILabel"; text = "No worries, enter your email address below and we'll send you a new password"; ObjectID = "ISb-vU-Pf1"; */
+"ISb-vU-Pf1.text" = "لا تقلق، أدخل عنوان بريدك الإلكتروني أدناه وسنرسل لك كلمة مرور جديدة";
+
+/* Class = "UILabel"; text = "Log in now"; ObjectID = "J2o-jp-IYN"; */
+"J2o-jp-IYN.text" = "سجّل الآن";
+
+/* Class = "UIButton"; normalTitle = "Sign Up"; ObjectID = "J7l-G8-7AX"; */
+"J7l-G8-7AX.normalTitle" = "تسجيل";
+
+/* Class = "UITextField"; placeholder = "Full name"; ObjectID = "Kuo-Xf-GO0"; */
+"Kuo-Xf-GO0.placeholder" = "الاسم الكامل";
+
+/* Class = "UILabel"; text = "Hey, don't hesitate to ask anything we are always here for your help"; ObjectID = "O1Y-Tp-wTU"; */
+"O1Y-Tp-wTU.text" = "مرحبًا، لا تتردد في طرح أي استفسار نحن هنا دائمًا لمساعدتك";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "OEJ-RV-2Nn"; */
+"OEJ-RV-2Nn.text" = "التسمية";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "P2S-Vc-INJ"; */
+"P2S-Vc-INJ.placeholder" = "كلمة المرور";
+
+/* Class = "UILabel"; text = "German"; ObjectID = "Q3r-Uc-AiJ"; */
+"Q3r-Uc-AiJ.text" = "ألمانية";
+
+/* Class = "UIButton"; normalTitle = "Forgot Password ?"; ObjectID = "ROC-A0-N10"; */
+"ROC-A0-N10.normalTitle" = "نسيت كلمة المرور ؟";
+
+/* Class = "UILabel"; text = "Add your profile photo"; ObjectID = "Rmf-Ui-6fD"; */
+"Rmf-Ui-6fD.text" = "أضف صورة ملفك الشخصي";
+
+/* Class = "UITextField"; placeholder = "Phone number or email address"; ObjectID = "S7v-xf-XKP"; */
+"S7v-xf-XKP.placeholder" = "رقم الهاتف أو عنوان البريد الإلكتروني";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "SGp-T3-78b"; */
+"SGp-T3-78b.text" = "التسمية";
+
+/* Class = "UILabel"; text = "Subject"; ObjectID = "YPV-97-q8J"; */
+"YPV-97-q8J.text" = "الموضوع";
+
+/* Class = "UILabel"; text = "Vehicle Variant"; ObjectID = "ZMf-PT-VFC"; */
+"ZMf-PT-VFC.text" = "هيكل المركبة";
+
+/* Class = "UITextField"; placeholder = "Email Address"; ObjectID = "aFg-ld-YH7"; */
+"aFg-ld-YH7.placeholder" = "عنوان البريد الإلكتروني";
+
+/* Class = "UIButton"; normalTitle = "Contact With Email"; ObjectID = "cyz-xz-urx"; */
+"cyz-xz-urx.normalTitle" = "الاتصال عبر البريد الإلكتروني";
+
+/* Class = "UILabel"; text = "Vehicle Registration Number"; ObjectID = "eAI-DA-Csp"; */
+"eAI-DA-Csp.text" = "FIN الرقم التعريفي للمركبة";
+
+/* Class = "UILabel"; text = "CONTACT US"; ObjectID = "fZL-tp-3fi"; */
+"fZL-tp-3fi.text" = "الاتصال بنا";
+
+/* Class = "UILabel"; text = "Home"; ObjectID = "fgs-lL-snE"; */
+"fgs-lL-snE.text" = "الصفحة الرئيسية";
+
+/* Class = "UIButton"; normalTitle = "Log In"; ObjectID = "g1r-7h-6Ra"; */
+"g1r-7h-6Ra.normalTitle" = "تسجيل الدخول";
+
+/* Class = "UILabel"; text = "About Us"; ObjectID = "kIu-Rs-3cT"; */
+"kIu-Rs-3cT.text" = "نبذة عنا";
+
+/* Class = "UIButton"; normalTitle = "Contact With Mobile"; ObjectID = "knV-wZ-Fmr"; */
+"knV-wZ-Fmr.normalTitle" = "الاتصال عبر الجوال";
+
+/* Class = "UILabel"; text = "Language"; ObjectID = "kzJ-QT-fd6"; */
+"kzJ-QT-fd6.text" = "اللغات";
+
+/* Class = "UITextField"; placeholder = "Name"; ObjectID = "mPl-nt-Zfd"; */
+"mPl-nt-Zfd.placeholder" = "الاسم";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "oPA-wz-D5M"; */
+"oPA-wz-D5M.text" = "التسمية";
+
+/* Class = "UILabel"; text = "You don't have an account yet? Sign up now, it's free."; ObjectID = "pbk-dK-S49"; */
+"pbk-dK-S49.text" = "لا تملك حسابًا بعد؟ انضم الآن، إنه مجاني.";
+
+/* Class = "UIButton"; normalTitle = "SUBMIT"; ObjectID = "q6w-L8-wgD"; */
+"q6w-L8-wgD.normalTitle" = "إرسال";
+
+/* Class = "UILabel"; text = "Add Vehicle"; ObjectID = "qyw-Gr-zVL"; */
+"qyw-Gr-zVL.text" = "إضافة مركبة";
+
+/* Class = "UILabel"; text = "Select Language"; ObjectID = "rbW-x2-LhP"; */
+"rbW-x2-LhP.text" = "اختيار اللغة";
+
+/* Class = "UILabel"; text = "Forgot Password?"; ObjectID = "sAw-BI-y8B"; */
+"sAw-BI-y8B.text" = "نسيت كلمة المرور؟";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "smY-fr-zPf"; */
+"smY-fr-zPf.text" = "التسمية";
+
+/* Class = "UILabel"; text = "Vehicle Model Year"; ObjectID = "tBD-MC-4eV"; */
+"tBD-MC-4eV.text" = "سنة الصنع";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "thN-10-jV4"; */
+"thN-10-jV4.text" = "التسمية";
+
+/* Class = "UILabel"; text = "Vehicle Model"; ObjectID = "ty0-cF-nh5"; */
+"ty0-cF-nh5.text" = "موديل المركبة";
+
+/* Class = "UILabel"; text = "Full Name"; ObjectID = "wcS-4L-O0m"; */
+"wcS-4L-O0m.text" = "الاسم الكامل";
+
+/* Class = "UILabel"; text = "Message"; ObjectID = "wwO-x6-ehf"; */
+"wwO-x6-ehf.text" = "الرسالة";
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "x3C-dX-2jd"; */
+"x3C-dX-2jd.normalTitle" = "إرسال";
+
+/* Class = "UILabel"; text = "Vehicle Brand"; ObjectID = "xxo-6k-48t"; */
+"xxo-6k-48t.text" = "نوع المركبة";
+
+/* Class = "UITextField"; placeholder = "Name"; ObjectID = "ytB-Q7-9Xz"; */
+"ytB-Q7-9Xz.placeholder" = "الاسم";
+
+/* Class = "UILabel"; text = "Log Out"; ObjectID = "zW8-ZI-Nt0"; */
+"zW8-ZI-Nt0.text" = "تسجيل الخروج";
+
+/* Class = "UILabel"; text = "EDIT PROFILE"; ObjectID = "zlX-kg-YLK"; */
+"zlX-kg-YLK.text" = "تعديل الملف الشخصي";
