@@ -44,7 +44,14 @@ class AppSharedData: NSObject {
     var lastService = "Letzter Service :- "
     var nextService = "Update Service :- "
     
-    var currentLanguage = ""
+    var currentLanguage: String {
+        get {
+            return LocalizationSystem.sharedInstance.getLanguage()
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: "currentLanguage")
+        }
+    }
     
     
     open var isLoggedIn: Bool {

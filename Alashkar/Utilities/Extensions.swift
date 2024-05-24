@@ -187,9 +187,9 @@ extension UIViewController {
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Convert Way64 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 extension String {
     
-    func localized() -> String{
-        return NSLocalizedString(self, tableName: "Localizable", bundle: .main, value: self, comment: self)
-    }
+//    func localized() -> String{
+//        return NSLocalizedString(self, tableName: "Localizable", bundle: .main, value: self, comment: self)
+//    }
     
     func fromBase64() -> String? {
         guard let data = Data(base64Encoded: self, options: Data.Base64DecodingOptions(rawValue: 0)) else {

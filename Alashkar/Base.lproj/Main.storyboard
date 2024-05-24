@@ -3,7 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -1675,7 +1675,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QWd-lh-UEo">
                                                         <rect key="frame" x="0.0" y="0.0" width="393" height="738"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="06L-aq-6Hp">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="06L-aq-6Hp">
                                                                 <rect key="frame" x="146.66666666666666" y="30" width="100" height="100"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="100" id="1EC-sO-qR1"/>
@@ -2319,7 +2319,7 @@
                                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 </state>
                                                                                 <connections>
-                                                                                    <action selector="btnOnContactMobile:" destination="SdV-oA-viT" eventType="touchUpInside" id="zs0-NP-kw4"/>
+                                                                                    <action selector="btnOnMobile:" destination="SdV-oA-viT" eventType="touchUpInside" id="Jsq-fT-gu4"/>
                                                                                 </connections>
                                                                             </button>
                                                                         </subviews>
@@ -2363,7 +2363,7 @@
                                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 </state>
                                                                                 <connections>
-                                                                                    <action selector="btnOnContactWithEmail:" destination="SdV-oA-viT" eventType="touchUpInside" id="MWg-c2-yxR"/>
+                                                                                    <action selector="btnOnMail:" destination="SdV-oA-viT" eventType="touchUpInside" id="4Vx-aH-WOg"/>
                                                                                 </connections>
                                                                             </button>
                                                                         </subviews>

@@ -82,3 +82,8 @@
 "Add your professional photo" = "Fügen Sie Ihr professionelles Foto hinzu";
 "German" = "Deutsch";
 "Arabic" = "Arabisch";
+"Change Language" = "Sprache ändern";
+"Are you sure you want to change the language? After changing the language, you need to quit the app and reopen it." = "Sind Sie sicher, dass Sie die Sprache ändern möchten? Nachdem Sie die Sprache geändert haben, müssen Sie die App beenden und neu öffnen.";
+"Confirm" = "Bestätigen";
+"Cancel" = "Abbrechen";
+

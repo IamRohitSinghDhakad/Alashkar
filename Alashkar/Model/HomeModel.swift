@@ -83,6 +83,8 @@ class HomeModel: NSObject {
         
         if let value = dictionary["vehicle_id"] as? Int {
             vehicle_id = "\(value)"
+        }else if let value = dictionary["vehicle_id"] as? String {
+            vehicle_id = value
         }
         
         if let value = dictionary["year"] as? String {

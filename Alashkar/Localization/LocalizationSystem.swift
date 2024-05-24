@@ -75,9 +75,8 @@ class LocalizationSystem:NSObject {
     
 }
 
-
-
-
-
-
-
+extension String {
+    func localized() -> String {
+        return LocalizationSystem.sharedInstance.localizedStringForKey(key: self, comment: "")
+    }
+}

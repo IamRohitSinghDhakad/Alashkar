@@ -26,12 +26,12 @@ class HomeViewController: UIViewController {
         let nib = UINib(nibName: "HomeTableViewCell", bundle: nil)
         self.tblVw.register(nib, forCellReuseIdentifier: "HomeTableViewCell")
         
-        call_GetVehicle_Api()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+        call_GetVehicle_Api()
         // Determine user's preferred language
         let preferredLanguage = LocalizationSystem.sharedInstance.getLanguage()
         
@@ -46,8 +46,6 @@ class HomeViewController: UIViewController {
             objAppShareData.currentLanguage = "de"
         }
     }
-    
- 
     
     @IBAction func btnOnOpenSideMenu(_ sender: Any) {
         self.sideMenuController?.revealMenu()
@@ -77,7 +75,26 @@ extension HomeViewController : UITableViewDelegate, UITableViewDataSource{
         cell.lblLastService.text = "\(objAppShareData.lastService.localized()) \(obj.last_service_date ?? "NA")"
         cell.lblUpdateService.text = "\(objAppShareData.nextService.localized()) \(obj.next_service_date ?? "NA")"
         
+        cell.btnEdit.tag = indexPath.row
+        cell.btnDelete.tag = indexPath.row
+        
+        cell.btnEdit.addTarget(self, action: #selector(btnOnEdit(sender: )), for: .touchUpInside)
+        cell.btnDelete.addTarget(self, action: #selector(btnOnDelete(sender: )), for: .touchUpInside)
+        
         return cell
+    }
+    
+    @objc func btnOnEdit(sender: UIButton){
+        print(sender.tag)
+        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "AddVehicleViewController")as! AddVehicleViewController
+        vc.objcars = self.arrCars[sender.tag]
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc func btnOnDelete(sender: UIButton){
+        print(sender.tag)
+        call_DeleteVehicle_Api(strVehicleId: self.arrCars[sender.tag].vehicle_id ?? "")
     }
     
     
@@ -111,7 +128,7 @@ extension HomeViewController {
             
             if status == MessageConstant.k_StatusCode{
                 if let user_details  = response["result"] as? [[String:Any]] {
-                   
+                    self.arrCars.removeAll()
                     for data in user_details{
                         let obj = HomeModel.init(from: data)
                         self.arrCars.append(obj)
@@ -120,12 +137,10 @@ extension HomeViewController {
                     self.tblVw.reloadData()
                     
                 }
-                else {
-                    objAlert.showAlert(message: "Something went wrong!", title: "", controller: self)
-                }
             }else{
                 objWebServiceManager.hideIndicator()
                 if let msgg = response["result"]as? String{
+                    self.arrCars.removeAll()
                     objAlert.showAlert(message: msgg, title: "", controller: self)
                 }else{
                     objAlert.showAlert(message: message ?? "", title: "", controller: self)
@@ -188,6 +203,50 @@ extension HomeViewController {
             }else{
                 objWebServiceManager.hideIndicator()
                 if let msgg = response["result"]as? String{
+                    objAlert.showAlert(message: msgg, title: "", controller: self)
+                }else{
+                    objAlert.showAlert(message: message ?? "", title: "", controller: self)
+                }
+            }
+            
+            
+        } failure: { (Error) in
+            //  print(Error)
+            objWebServiceManager.hideIndicator()
+        }
+    }
+    
+    
+    
+    func call_DeleteVehicle_Api(strVehicleId:String){
+        
+        if !objWebServiceManager.isNetworkAvailable(){
+            objWebServiceManager.hideIndicator()
+            objAlert.showAlert(message: "No Internet Connection", title: "Alert", controller: self)
+            return
+        }
+        
+        objWebServiceManager.showIndicator()
+        
+        let dicrParam = ["user_id":objAppShareData.UserDetail.strUserId!,
+                         "vehicle_id":strVehicleId,
+                         "lang":objAppShareData.currentLanguage]as [String:Any]
+        
+        objWebServiceManager.requestPost(strURL: WsUrl.url_DeleteVehicle, queryParams: [:], params: dicrParam, strCustomValidation: "", showIndicator: false) { (response) in
+            objWebServiceManager.hideIndicator()
+            
+            let status = (response["status"] as? Int)
+            let message = (response["message"] as? String)
+            print(response)
+            
+            if status == MessageConstant.k_StatusCode{
+                if response["result"] is String {
+                    self.call_GetVehicle_Api()
+                }
+            }else{
+                objWebServiceManager.hideIndicator()
+                if let msgg = response["result"]as? String{
+                    self.arrCars.removeAll()
                     objAlert.showAlert(message: msgg, title: "", controller: self)
                 }else{
                     objAlert.showAlert(message: message ?? "", title: "", controller: self)

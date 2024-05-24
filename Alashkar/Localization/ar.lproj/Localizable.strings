@@ -82,3 +82,7 @@
 "Add your professional photo" = "أضف صورتك الاحترافية";
 "German" = "ألمانية";
 "Arabic" = "عربي";
+"Change Language" = "تغيير اللغة";
+"Are you sure you want to change the language? After changing the language, you need to quit the app and reopen it." = "هل أنت متأكد أنك تريد تغيير اللغة؟ بعد تغيير اللغة، تحتاج إلى إنهاء التطبيق وإعادة فتحه.";
+"Confirm" = "تأكيد";
+"Cancel" = "إلغاء";

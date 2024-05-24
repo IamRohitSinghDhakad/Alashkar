@@ -23,6 +23,8 @@ class AddVehicleViewController: UIViewController {
     @IBOutlet weak var btnSubmit: UIButton!
     
     
+    var objcars : HomeModel?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,6 +59,17 @@ class AddVehicleViewController: UIViewController {
             self.tfModelYear.textAlignment = .left
             self.tfVehicleRegistrationNumber.textAlignment = .left
         }
+        
+        self.setData()
+        
+    }
+    
+    func setData(){
+        self.tfVehicleBrand.text = self.objcars?.brand
+        self.tfVehicleModel.text = self.objcars?.carModel
+        self.tfVehicleVarient.text = self.objcars?.variant
+        self.tfModelYear.text = self.objcars?.year
+        self.tfVehicleRegistrationNumber.text = self.objcars?.registration
     }
     
 
@@ -64,5 +77,69 @@ class AddVehicleViewController: UIViewController {
         onBackPressed()
     }
     @IBAction func btnOnSubmit(_ sender: Any) {
+        call_AddVehicle_Api()
     }
+}
+
+extension AddVehicleViewController {
+    
+   
+    func call_AddVehicle_Api(){
+        
+        if !objWebServiceManager.isNetworkAvailable(){
+            objWebServiceManager.hideIndicator()
+            objAlert.showAlert(message: "No Internet Connection", title: "Alert", controller: self)
+            return
+        }
+        
+        objWebServiceManager.showIndicator()
+        
+        let dicrParam = ["user_id":objAppShareData.UserDetail.strUserId!,
+                         "vehicle_id":self.objcars?.vehicle_id ?? "",
+                         "brand":self.tfVehicleBrand.text!,
+                         "model":self.tfVehicleModel.text!,
+                         "variant":self.tfVehicleVarient.text!,
+                         "year":self.tfModelYear.text!,
+                         "kraftstoffart":objcars?.kraftstoffart ?? "",
+                         "hsn":self.objcars?.hsn ?? "",
+                         "tsn":self.objcars?.tsn ?? "",
+                         "registration":self.tfVehicleRegistrationNumber.text!,
+                         "lang":objAppShareData.currentLanguage]as [String:Any]
+        
+        print(dicrParam)
+        
+        objWebServiceManager.requestPost(strURL: WsUrl.url_AddVehicle, queryParams: [:], params: dicrParam, strCustomValidation: "", showIndicator: false) { (response) in
+            objWebServiceManager.hideIndicator()
+            
+            let status = (response["status"] as? Int)
+            let message = (response["message"] as? String)
+            print(response)
+            
+            if status == MessageConstant.k_StatusCode{
+                if let user_details  = response["result"] as? [String:Any] {
+                   
+                    objAlert.showAlertSingleButtonCallBack(alertBtn: "OK".localized(), title: "", message: "Vehicle Added Succesfully", controller: self) {
+                        self.onBackPressed()
+                    }
+                    
+                }
+                else {
+                    objAlert.showAlert(message: "Something went wrong!", title: "", controller: self)
+                }
+            }else{
+                objWebServiceManager.hideIndicator()
+                if let msgg = response["result"]as? String{
+                    objAlert.showAlert(message: msgg, title: "", controller: self)
+                }else{
+                    objAlert.showAlert(message: message ?? "", title: "", controller: self)
+                }
+            }
+            
+            
+        } failure: { (Error) in
+            //  print(Error)
+            objWebServiceManager.hideIndicator()
+        }
+    }
+    
 }

@@ -48,12 +48,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Determine user's preferred language
         let preferredLanguage = LocalizationSystem.sharedInstance.getLanguage()
         
-        // Check if the language is Arabic
-        if preferredLanguage.lowercased().hasPrefix("ar") {
-            // Set app layout to right-to-left
+        // Set the current language based on saved preference
+        let currentLanguage = objAppShareData.currentLanguage
+        LocalizationSystem.sharedInstance.setLanguage(languageCode: currentLanguage)
+        
+        if currentLanguage == "ar" {
             UIView.appearance().semanticContentAttribute = .forceRightToLeft
         } else {
-            // Set app layout to left-to-right (default)
             UIView.appearance().semanticContentAttribute = .forceLeftToRight
         }
         

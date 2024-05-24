@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class EditProfileViewController: UIViewController,UINavigationControllerDelegate {
 
@@ -23,9 +24,17 @@ class EditProfileViewController: UIViewController,UINavigationControllerDelegate
     var imagePicker = UIImagePickerController()
     var pickedImage:UIImage?
     
+    var objUser : UserModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
         self.lblEditProfile.text = "Profile".localized()
         self.imagePicker.delegate = self
         self.lblAddYourPhoto.text = "Add your professional photo".localized()
@@ -47,6 +56,8 @@ class EditProfileViewController: UIViewController,UINavigationControllerDelegate
             self.tfEmail.textAlignment = .left
             self.tfMobile.textAlignment = .left
         }
+        
+        self.call_GetProfile_Api()
     }
     
 
@@ -59,8 +70,37 @@ class EditProfileViewController: UIViewController,UINavigationControllerDelegate
     }
     
     @IBAction func btnOnSubmit(_ sender: Any) {
-        
+        if validateInputs() {
+            // Call your API submission function here
+            self.callWebserviceForUpdateProfile()
+        }
     }
+    
+    func validateInputs() -> Bool {
+           guard let name = tfName.text, !name.isEmpty else {
+               showAlert(message: "Name cannot be empty")
+               return false
+           }
+           
+           guard let mobile = tfMobile.text, isValidMobileNumber(mobile) else {
+               showAlert(message: "Invalid mobile number")
+               return false
+           }
+           
+           return true
+       }
+       
+       func isValidMobileNumber(_ mobile: String) -> Bool {
+           let mobileRegEx = "^[0-9]{10}$"
+           let mobileTest = NSPredicate(format:"SELF MATCHES %@", mobileRegEx)
+           return mobileTest.evaluate(with: mobile)
+       }
+       
+       func showAlert(message: String) {
+           let alert = UIAlertController(title: "Validation Error", message: message, preferredStyle: .alert)
+           alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+           self.present(alert, animated: true, completion: nil)
+       }
     
 }
 
@@ -187,12 +227,16 @@ extension EditProfileViewController {
             
             if status == MessageConstant.k_StatusCode{
                 
-                guard let user_details  = response["result"] as? [String:Any] else{
+                guard response["result"] is [String:Any] else{
                     return
                 }
                 
                 objAlert.showAlertSingleButtonCallBack(alertBtn: "OK", title: "", message: "Updated Succesfully", controller: self) {
-                    
+                    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+                    let vc = (self.mainStoryboard.instantiateViewController(withIdentifier: "SideMenuController") as? SideMenuController)!
+                    let navController = UINavigationController(rootViewController: vc)
+                    navController.isNavigationBarHidden = true
+                    appDelegate.window?.rootViewController = navController
                 }
                 
                 
@@ -202,6 +246,64 @@ extension EditProfileViewController {
             }
         } failure: { (Error) in
             print(Error)
+        }
+    }
+    
+    
+    
+    func call_GetProfile_Api(){
+        
+        if !objWebServiceManager.isNetworkAvailable(){
+            objWebServiceManager.hideIndicator()
+            objAlert.showAlert(message: "No Internet Connection", title: "Alert", controller: self)
+            return
+        }
+        
+        objWebServiceManager.showIndicator()
+        
+        let dicrParam = ["user_id":objAppShareData.UserDetail.strUserId!]as [String:Any]
+        
+        objWebServiceManager.requestPost(strURL: WsUrl.url_getUserProfile, queryParams: [:], params: dicrParam, strCustomValidation: "", showIndicator: false) { (response) in
+            objWebServiceManager.hideIndicator()
+            
+            let status = (response["status"] as? Int)
+            let message = (response["message"] as? String)
+            print(response)
+            
+            if status == MessageConstant.k_StatusCode{
+                if let user_details  = response["result"] as? [String:Any] {
+//
+                    self.objUser = UserModel.init(from: user_details)
+
+                    self.tfName.text = self.objUser?.name
+                    self.tfEmail.text = self.objUser?.email
+                    self.tfMobile.text = self.objUser?.mobile
+
+                    let imageUrl  = self.objUser?.userImage
+                    if imageUrl != "" {
+                        let url = URL(string: imageUrl ?? "")
+                        self.imgVwUser.sd_setImage(with: url, placeholderImage: #imageLiteral(resourceName: "image"))
+                    }else{
+                        self.imgVwUser.image = #imageLiteral(resourceName: "image")
+                    }
+                    
+                }
+                else {
+                    objAlert.showAlert(message: "Something went wrong!", title: "", controller: self)
+                }
+            }else{
+                objWebServiceManager.hideIndicator()
+                if let msgg = response["result"]as? String{
+                    objAlert.showAlert(message: msgg, title: "", controller: self)
+                }else{
+                    objAlert.showAlert(message: message ?? "", title: "", controller: self)
+                }
+            }
+            
+            
+        } failure: { (Error) in
+            //  print(Error)
+            objWebServiceManager.hideIndicator()
         }
     }
     
