@@ -11,6 +11,8 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var tblVw: UITableView!
     @IBOutlet weak var lblHomeHeading: UILabel!
+    @IBOutlet weak var imgVw: UIImageView!
+    @IBOutlet weak var lblNoText: UILabel!
     
     var arrCars = [HomeModel]()
     
@@ -19,6 +21,10 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
 
         self.lblHomeHeading.text = "Home".localized()
+        
+       
+        self.lblNoText.text = "No vehicle added yet".localized()
+        self.imgVw.setImageColor(color:  UIColor(hexString: "#C5403D"))
         
         call_GetProfile_Api()
         self.tblVw.delegate = self
@@ -134,6 +140,16 @@ extension HomeViewController {
                         self.arrCars.append(obj)
                     }
                     
+                    if self.arrCars.count == 0{
+                        self.tblVw.isHidden = true
+                        self.imgVw.isHidden = false
+                        self.lblNoText.isHidden = false
+                    }else{
+                        self.tblVw.isHidden = false
+                        self.imgVw.isHidden = true
+                        self.lblNoText.isHidden = true
+                    }
+                    
                     self.tblVw.reloadData()
                     
                 }
@@ -141,6 +157,9 @@ extension HomeViewController {
                 objWebServiceManager.hideIndicator()
                 if let msgg = response["result"]as? String{
                     self.arrCars.removeAll()
+                    self.tblVw.isHidden = true
+                    self.imgVw.isHidden = false
+                    self.lblNoText.isHidden = false
                     objAlert.showAlert(message: msgg, title: "", controller: self)
                 }else{
                     objAlert.showAlert(message: message ?? "", title: "", controller: self)
@@ -261,3 +280,24 @@ extension HomeViewController {
     }
     
 }
+
+extension UIColor {
+        convenience init(hexString: String) {
+            let hex = hexString.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
+            var int = UInt64()
+            Scanner(string: hex).scanHexInt64(&int)
+            let a, r, g, b: UInt64
+            switch hex.count {
+            case 3: // RGB (12-bit)
+                (a, r, g, b) = (255, (int >> 8) * 17, (int >> 4 & 0xF) * 17, (int & 0xF) * 17)
+            case 6: // RGB (24-bit)
+                (a, r, g, b) = (255, int >> 16, int >> 8 & 0xFF, int & 0xFF)
+            case 8: // ARGB (32-bit)
+                (a, r, g, b) = (int >> 24, int >> 16 & 0xFF, int >> 8 & 0xFF, int & 0xFF)
+            default:
+                (a, r, g, b) = (255, 0, 0, 0)
+            }
+            self.init(red: CGFloat(r) / 255, green: CGFloat(g) / 255, blue: CGFloat(b) / 255, alpha: CGFloat(a) / 255)
+        }
+}
+

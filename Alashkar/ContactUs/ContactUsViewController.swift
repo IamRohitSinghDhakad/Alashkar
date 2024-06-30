@@ -75,7 +75,7 @@ class ContactUsViewController: UIViewController, MFMailComposeViewControllerDele
            guard MFMailComposeViewController.canSendMail() else {
                // Show alert if mail services are not available
                let alert = UIAlertController(title: "Error", message: "Mail services are not available", preferredStyle: .alert)
-               alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+               alert.addAction(UIAlertAction(title: "OK".localized(), style: .default, handler: nil))
                present(alert, animated: true, completion: nil)
                return
            }
@@ -96,7 +96,7 @@ class ContactUsViewController: UIViewController, MFMailComposeViewControllerDele
             } else {
                 // Show alert if the dialer cannot be opened
                 let alert = UIAlertController(title: "Error", message: "Cannot open the dialer", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                alert.addAction(UIAlertAction(title: "OK".localized(), style: .default, handler: nil))
                 present(alert, animated: true, completion: nil)
             }
         }
@@ -133,9 +133,9 @@ extension ContactUsViewController{
             print(response)
             
             if status == MessageConstant.k_StatusCode{
-                if let user_details  = response["result"] as? [[String:Any]] {
+                if let user_details  = response["result"] as? [String:Any] {
                   
-                    objAlert.showAlertSingleButtonCallBack(alertBtn: "OK".localized(), title: "", message: "Your request submitted succesfully", controller: self) {
+                    objAlert.showAlertSingleButtonCallBack(alertBtn: "OK".localized(), title: "", message: "Thank you very much! We will answer you as soon as possible".localized(), controller: self) {
                         let appDelegate = UIApplication.shared.delegate as! AppDelegate
                         let vc = (self.mainStoryboard.instantiateViewController(withIdentifier: "SideMenuController") as? SideMenuController)!
                         let navController = UINavigationController(rootViewController: vc)

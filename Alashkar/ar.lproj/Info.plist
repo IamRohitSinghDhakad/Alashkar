@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>NSCameraUsageDescription</key>
-	<string>%@</string>
+	<string>Need camera access for set profile picture.</string>
 	<key>UIUserInterfaceStyle</key>
 	<string>Light</string>
 </dict>

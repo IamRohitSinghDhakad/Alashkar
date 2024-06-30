@@ -57,6 +57,7 @@
 		F98447662BEE17D900FEAED5 /* SWRevealViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98447572BEE17D900FEAED5 /* SWRevealViewController+Extensions.swift */; };
 		F984476B2BEE180C00FEAED5 /* AppSideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98447672BEE180C00FEAED5 /* AppSideMenuTableViewCell.swift */; };
 		F984476C2BEE180C00FEAED5 /* AppSideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98447692BEE180C00FEAED5 /* AppSideMenuViewController.swift */; };
+		F986DACD2C0E3D75007A06E6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F986DACB2C0E3D75007A06E6 /* InfoPlist.strings */; };
 		F9A74F9D2BF229A300808C6A /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A74F9C2BF229A300808C6A /* ContactUsViewController.swift */; };
 		F9A74F9F2BF229D000808C6A /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A74F9E2BF229D000808C6A /* PrivacyPolicyViewController.swift */; };
 		F9A74FA12BF229F100808C6A /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A74FA02BF229F100808C6A /* EditProfileViewController.swift */; };
@@ -78,7 +79,6 @@
 		F97778FC2BECB5C500A3418E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F97778FE2BECB5C700A3418E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F97779012BECB5C700A3418E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F97779032BECB5C700A3418E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F98446EC2BEDFD6400FEAED5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F98446EE2BEE013700FEAED5 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		F98446F02BEE052F00FEAED5 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +124,10 @@
 		F98447572BEE17D900FEAED5 /* SWRevealViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SWRevealViewController+Extensions.swift"; sourceTree = "<group>"; };
 		F98447672BEE180C00FEAED5 /* AppSideMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSideMenuTableViewCell.swift; sourceTree = "<group>"; };
 		F98447692BEE180C00FEAED5 /* AppSideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSideMenuViewController.swift; sourceTree = "<group>"; };
+		F986DACE2C0E3DA2007A06E6 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F986DACF2C0E3DA3007A06E6 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F986DAD02C0E4119007A06E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F986DAD42C0E4147007A06E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9A74F9C2BF229A300808C6A /* ContactUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
 		F9A74F9E2BF229D000808C6A /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
 		F9A74FA02BF229F100808C6A /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +140,7 @@
 		F9A74FAD2BF27BCD00808C6A /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F9A74FAE2BF27BCE00808C6A /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F9A74FAF2BF27BFB00808C6A /* LocalizationSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizationSystem.swift; sourceTree = "<group>"; };
+		F9C2B25A2C00E8EB0052E7DB /* Alashkar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Alashkar.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +175,7 @@
 		F97778E92BECB5C500A3418E = {
 			isa = PBXGroup;
 			children = (
+				F986DACB2C0E3D75007A06E6 /* InfoPlist.strings */,
 				F97778F42BECB5C500A3418E /* Alashkar */,
 				F97778F32BECB5C500A3418E /* Products */,
 				37CB665EFB6A7150A93C5F83 /* Pods */,
@@ -188,6 +194,7 @@
 		F97778F42BECB5C500A3418E /* Alashkar */ = {
 			isa = PBXGroup;
 			children = (
+				F9C2B25A2C00E8EB0052E7DB /* Alashkar.entitlements */,
 				F9A74FA92BF27A1300808C6A /* Localization */,
 				F9A74FA22BF22CDF00808C6A /* SelectLanguage */,
 				F9A74F9B2BF2299600808C6A /* Profile */,
@@ -206,7 +213,7 @@
 				F97778FB2BECB5C500A3418E /* Main.storyboard */,
 				F97778FE2BECB5C700A3418E /* Assets.xcassets */,
 				F97779002BECB5C700A3418E /* LaunchScreen.storyboard */,
-				F97779032BECB5C700A3418E /* Info.plist */,
+				F986DAD42C0E4147007A06E6 /* Info.plist */,
 				F98447442BEE115800FEAED5 /* BridgingHeader.h */,
 			);
 			path = Alashkar;
@@ -467,6 +474,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F97778FF2BECB5C700A3418E /* Assets.xcassets in Resources */,
+				F986DACD2C0E3D75007A06E6 /* InfoPlist.strings in Resources */,
 				F9A74FAC2BF27BBB00808C6A /* Localizable.strings in Resources */,
 				F98447102BEE085800FEAED5 /* century.ttf in Resources */,
 				F97779022BECB5C700A3418E /* Base in Resources */,
@@ -597,6 +605,16 @@
 				F9A74FA82BF279EA00808C6A /* ar */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F986DACB2C0E3D75007A06E6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F986DACE2C0E3DA2007A06E6 /* ar */,
+				F986DACF2C0E3DA3007A06E6 /* de */,
+				F986DAD02C0E4119007A06E6 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 		F9A74FAA2BF27BBB00808C6A /* Localizable.strings */ = {
@@ -739,11 +757,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Alashkar/Alashkar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K8MF87837Z;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Alashkar/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -754,7 +775,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ios.Alashkar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -774,11 +795,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Alashkar/Alashkar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K8MF87837Z;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Alashkar/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -789,7 +813,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ios.Alashkar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

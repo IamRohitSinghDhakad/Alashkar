@@ -47,6 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Determine user's preferred language
         let preferredLanguage = LocalizationSystem.sharedInstance.getLanguage()
+        print(preferredLanguage)
         
         // Set the current language based on saved preference
         let currentLanguage = objAppShareData.currentLanguage

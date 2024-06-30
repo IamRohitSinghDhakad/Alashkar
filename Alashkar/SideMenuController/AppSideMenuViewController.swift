@@ -38,7 +38,8 @@ class AppSideMenuViewController: UIViewController {
                                             SideMenuOptions(menuName: "Contact Us".localized(), menuImageName: "", menuSelectedImageName: ""),
                                             SideMenuOptions(menuName: "Language".localized(), menuImageName: "", menuSelectedImageName: ""),
                                             SideMenuOptions(menuName: "Privacy Policy".localized(), menuImageName: "", menuSelectedImageName: ""),
-                                            SideMenuOptions(menuName: "Log Out".localized(), menuImageName: "", menuSelectedImageName: "")]
+                                            SideMenuOptions(menuName: "Log Out".localized(), menuImageName: "", menuSelectedImageName: ""),
+                                            SideMenuOptions(menuName: "Delete Account".localized(), menuImageName: "", menuSelectedImageName: "")]
     
     
     //MARK: - Override Methods
@@ -191,6 +192,11 @@ extension AppSideMenuViewController: UITableViewDelegate, UITableViewDataSource 
             objAlert.showAlertCallBack(alertLeftBtn: "Yes".localized(), alertRightBtn: "No".localized(), title: "Logout?".localized(), message: "Do you want to log out?".localized(), controller: self) {
                 AppSharedData.sharedObject().signOut()
             }
+        case 7:
+            sideMenuController?.hideMenu()
+            objAlert.showAlertCallBack(alertLeftBtn: "Yes".localized(), alertRightBtn: "No".localized(), title: "Delete Account?".localized(), message: "Do you want to Delete account?".localized(), controller: self) {
+                self.callWebserviceForDeleteAccount()
+            }
         default:
             sideMenuController?.setContentViewController(with: "\(row)", animated: Preferences.shared.enableTransitionAnimation)
             sideMenuController?.hideMenu()
@@ -200,6 +206,48 @@ extension AppSideMenuViewController: UITableViewDelegate, UITableViewDataSource 
             }
         }
         self.tableView.reloadData()
+    }
+    
+    func callWebserviceForDeleteAccount(){
+        
+        if !objWebServiceManager.isNetworkAvailable(){
+            objWebServiceManager.hideIndicator()
+            
+            objAlert.showAlert(message: "No Internet Connection", title: "Alert", controller: self)
+            return
+        }
+        objWebServiceManager.showIndicator()
+        self.view.endEditing(true)
+        
+        
+        let dicrParam = [
+            "user_id":objAppShareData.UserDetail.strUserId ?? "",
+            "status":"0"]as [String:Any]
+        
+        print(dicrParam)
+        
+        objWebServiceManager.requestPost(strURL: WsUrl.url_UpdateProfile, queryParams: [:], params: dicrParam, strCustomValidation: "", showIndicator: false) { response in
+            
+            objWebServiceManager.hideIndicator()
+            print(response)
+            let status = (response["status"] as? Int)
+            let message = (response["message"] as? String)
+            
+            if status == MessageConstant.k_StatusCode{
+                
+                guard response["result"] is [String:Any] else{
+                    return
+                }
+                AppSharedData.sharedObject().signOut()
+                
+                
+            }else{
+                objWebServiceManager.hideIndicator()
+                AppSharedData.sharedObject().signOut()
+            }
+        } failure: { (Error) in
+            print(Error)
+        }
     }
 }
 

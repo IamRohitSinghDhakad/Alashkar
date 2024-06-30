@@ -78,20 +78,22 @@ extension ForgotPasswordViewController {
         var dicrParam = [String:Any]()
         
         
-        dicrParam = ["email":self.tfEmail.text!,]as [String:Any]
+        dicrParam = ["email":self.tfEmail.text!,
+                     "lang":objAppShareData.currentLanguage]as [String:Any]
         
         
         
         objWebServiceManager.requestGet(strURL: WsUrl.url_ForgotPassword, params: dicrParam, queryParams: [:], strCustomValidation: "") { (response) in
             objWebServiceManager.hideIndicator()
             
-            let status = (response["status"] as? Int)
+            let status = (response["status"] as? String
+            )
             let message = (response["message"] as? String)
             print(response)
-            if status == MessageConstant.k_StatusCode{
-                if let user_details  = response["result"] as? [String:Any] {
+            if status == "\(MessageConstant.k_StatusCode)"{
+                if let user_details  = response["result"] as? String {
                     
-                    objAlert.showAlertSingleButtonCallBack(alertBtn: "OK", title: "", message: "Reset link email sent to your registered email", controller: self) {
+                    objAlert.showAlertSingleButtonCallBack(alertBtn: "OK", title: "", message: "Forgot passord success".localized() + " \(self.tfEmail.text ?? "")", controller: self) {
                         self.onBackPressed()
                     }
                     

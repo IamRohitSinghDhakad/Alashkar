@@ -29,6 +29,8 @@ class EditProfileViewController: UIViewController,UINavigationControllerDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.imagePicker.delegate = self
+        self.call_GetProfile_Api()
         
     }
     
@@ -57,7 +59,7 @@ class EditProfileViewController: UIViewController,UINavigationControllerDelegate
             self.tfMobile.textAlignment = .left
         }
         
-        self.call_GetProfile_Api()
+        
     }
     
 
@@ -78,12 +80,12 @@ class EditProfileViewController: UIViewController,UINavigationControllerDelegate
     
     func validateInputs() -> Bool {
            guard let name = tfName.text, !name.isEmpty else {
-               showAlert(message: "Name cannot be empty")
+               showAlert(message: "Enter Full Name".localized())
                return false
            }
            
-           guard let mobile = tfMobile.text, isValidMobileNumber(mobile) else {
-               showAlert(message: "Invalid mobile number")
+           guard let mobile = tfMobile.text, !mobile.isEmpty else {
+               showAlert(message: "Enter Mobile".localized())
                return false
            }
            
@@ -97,8 +99,8 @@ class EditProfileViewController: UIViewController,UINavigationControllerDelegate
        }
        
        func showAlert(message: String) {
-           let alert = UIAlertController(title: "Validation Error", message: message, preferredStyle: .alert)
-           alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+           let alert = UIAlertController(title: "Validation Error".localized(), message: message, preferredStyle: .alert)
+           alert.addAction(UIAlertAction(title: "OK".localized(), style: .default, handler: nil))
            self.present(alert, animated: true, completion: nil)
        }
     
@@ -111,20 +113,20 @@ extension EditProfileViewController: UIImagePickerControllerDelegate{
     func setImage(){
         imagePicker.allowsEditing = true
         imagePicker.sourceType = UIImagePickerController.SourceType.photoLibrary
-        let alert:UIAlertController=UIAlertController(title: "Choose Image", message: nil, preferredStyle: UIAlertController.Style.actionSheet)
-        let cameraAction = UIAlertAction(title: "Camera", style: UIAlertAction.Style.default)
+        let alert:UIAlertController=UIAlertController(title: "Choose Image".localized(), message: nil, preferredStyle: UIAlertController.Style.actionSheet)
+        let cameraAction = UIAlertAction(title: "Camera".localized(), style: UIAlertAction.Style.default)
         {
             UIAlertAction in
             self.openCamera()
         }
         
-        let galleryAction = UIAlertAction(title: "Gallery", style: UIAlertAction.Style.default)
+        let galleryAction = UIAlertAction(title: "Gallery".localized(), style: UIAlertAction.Style.default)
         {
             UIAlertAction in
             self.openGallery()
         }
         
-        let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel)
+        let cancelAction = UIAlertAction(title: "Cancel".localized(), style: UIAlertAction.Style.cancel)
         {
             UIAlertAction in
         }
@@ -208,7 +210,7 @@ extension EditProfileViewController {
         }
         imageData.append(imgData!)
         
-        let imageParam = ["image"]
+        let imageParam = ["user_image"]
         
         let dicrParam = [
             "user_id":objAppShareData.UserDetail.strUserId ?? "",
@@ -219,7 +221,7 @@ extension EditProfileViewController {
         
         print(dicrParam)
         
-        objWebServiceManager.uploadMultipartWithImagesData(strURL: WsUrl.url_UpdateProfile, params: dicrParam, showIndicator: true, customValidation: "", imageData: imgData, imageToUpload: imageData, imagesParam: imageParam, fileName: "image", mimeType: "image/jpeg") { (response) in
+        objWebServiceManager.uploadMultipartWithImagesData(strURL: WsUrl.url_UpdateProfile, params: dicrParam, showIndicator: true, customValidation: "", imageData: imgData, imageToUpload: imageData, imagesParam: imageParam, fileName: "user_image", mimeType: "image/jpeg") { (response) in
             objWebServiceManager.hideIndicator()
             print(response)
             let status = (response["status"] as? Int)
@@ -231,7 +233,7 @@ extension EditProfileViewController {
                     return
                 }
                 
-                objAlert.showAlertSingleButtonCallBack(alertBtn: "OK", title: "", message: "Updated Succesfully", controller: self) {
+                objAlert.showAlertSingleButtonCallBack(alertBtn: "OK".localized(), title: "", message: "Updated Succesfully".localized(), controller: self) {
                     let appDelegate = UIApplication.shared.delegate as! AppDelegate
                     let vc = (self.mainStoryboard.instantiateViewController(withIdentifier: "SideMenuController") as? SideMenuController)!
                     let navController = UINavigationController(rootViewController: vc)

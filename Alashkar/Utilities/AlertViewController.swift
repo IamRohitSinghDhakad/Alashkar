@@ -21,7 +21,7 @@ class AlertViewController: UIViewController {
     func showAlert(message: String, title: String = "", controller: UIViewController) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         
-        let OKAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        let OKAction = UIAlertAction(title: "OK".localized(), style: .default, handler: nil)
         
 
         alertController.addAction(OKAction)

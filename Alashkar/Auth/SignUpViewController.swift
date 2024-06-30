@@ -51,19 +51,19 @@ class SignUpViewController: UIViewController {
     
     private func validateAllFields() -> String? {
         if let name = tfName.text, name.isEmpty {
-            return "Name cannot be empty"
+            return "Enter Full Name".localized()
         }
         
         if let email = tfMail.text, !isValidEmail(email) {
-            return "Please enter a valid email address"
+            return "Enter Email Address".localized()
         }
         
-        if let mobile = tfMobile.text, !isValidMobile(mobile) {
-            return "Please enter a valid mobile number"
+        if let mobile = tfMobile.text, mobile.isEmpty {
+            return "Enter Mobile".localized()
         }
         
-        if let password = tfPassword.text, password.count < 6 {
-            return "Password must be at least 6 characters long"
+        if let password = tfPassword.text, password.isEmpty {
+            return "Enter Password".localized()
         }
         
         return nil
@@ -82,8 +82,8 @@ class SignUpViewController: UIViewController {
     }
     
     private func showAlert(message: String) {
-        let alert = UIAlertController(title: "Validation Error", message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        let alert = UIAlertController(title: "Validation Error".localized(), message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK".localized(), style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
 

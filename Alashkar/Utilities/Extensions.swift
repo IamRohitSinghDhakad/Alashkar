@@ -100,7 +100,7 @@ extension UIViewController : UITextFieldDelegate  {
         let alert = UIAlertController(title: Title, message: Message, preferredStyle: UIAlertController.Style.alert)
         
         
-        alert.addAction(UIAlertAction(title: "Ok",
+        alert.addAction(UIAlertAction(title: "Ok".localized(),
                                       style: UIAlertAction.Style.destructive,
                                       handler: {(_: UIAlertAction!) in
             //Ok action

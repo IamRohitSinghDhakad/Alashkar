@@ -15,7 +15,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var btnForGotPassword: UIButton!
     @IBOutlet weak var lblAlreadyhaveAnaccount: UILabel!
     
-    var strSelectLanguage = ""
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -98,7 +98,7 @@ extension LoginViewController {
             dicrParam = ["username":self.tfEmail.text!,
                          "password":self.tfPassword.text!,
                          "device_type":"iOS",
-                         "lang":strSelectLanguage,
+                         "lang":objAppShareData.currentLanguage,
                          "device_token":objAppShareData.strFirebaseToken]as [String:Any]
         
         
@@ -111,9 +111,15 @@ extension LoginViewController {
             if status == MessageConstant.k_StatusCode{
                 if let user_details  = response["result"] as? [String:Any] {
                     
-                    objAppShareData.SaveUpdateUserInfoFromAppshareData(userDetail: user_details)
-                    objAppShareData.fetchUserInfoFromAppshareData()
-                    self.makeRootControllerHome()
+                    
+                    if user_details["status"] as! String == "0"{
+                        objAlert.showAlert(message: "Account not found please sign Up".localized(), controller: self)
+                    }else{
+                        objAppShareData.SaveUpdateUserInfoFromAppshareData(userDetail: user_details)
+                        objAppShareData.fetchUserInfoFromAppshareData()
+                        self.makeRootControllerHome()
+                    }
+                   
                     
                 }
                 else {

@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  Alashkar
+
+  Created by Rohit SIngh Dhakad on 03/06/24.
+  
+*/
+
+
+"NSCameraUsageDescription" = "Zum Festlegen des Profilbilds ist Kamerazugriff erforderlich";

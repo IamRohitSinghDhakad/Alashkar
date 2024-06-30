@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import iOSDropDown
 
 class AddVehicleViewController: UIViewController {
 
@@ -21,15 +22,28 @@ class AddVehicleViewController: UIViewController {
     @IBOutlet weak var lblVehicleModelYear: UILabel!
     @IBOutlet weak var lblVehicleRegistrationNumber: UILabel!
     @IBOutlet weak var btnSubmit: UIButton!
+    @IBOutlet weak var tfFuelType: DropDown!
+    @IBOutlet weak var tfHSN: UITextField!
+    @IBOutlet weak var tfTSN: UITextField!
+    @IBOutlet weak var lblFuelType: UILabel!
+    @IBOutlet weak var lblHSN: UILabel!
+    @IBOutlet weak var lblTSN: UILabel!
     
     
     var objcars : HomeModel?
+    var strSelectedFuelType = ""
+    var arrString = ["Petrol".localized(),"Diesel".localized(),"Gas".localized()]
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       
+        self.tfFuelType.delegate = self
+        self.tfFuelType.optionArray = self.arrString
+        
+        self.tfFuelType.didSelect { selectedText, index, id in
+            self.tfFuelType.text = selectedText
+        }
         
         // Do any additional setup after loading the view.
     }
@@ -43,6 +57,9 @@ class AddVehicleViewController: UIViewController {
         self.lblVehicleVarient.text = "Vehicle Variant".localized()
         self.lblVehicleModelYear.text = "Vehicle Model Year".localized()
         self.lblVehicleRegistrationNumber.text = "Vehicle Registration Number".localized()
+        self.lblFuelType.text = "Fuel type".localized()
+        self.lblHSN.text = "HSN".localized()
+        self.lblTSN.text = "TSN".localized()
         self.btnSubmit.setTitle("Submit".localized(), for: .normal)
         
         
@@ -51,12 +68,18 @@ class AddVehicleViewController: UIViewController {
             self.tfVehicleModel.textAlignment = .right
             self.tfVehicleVarient.textAlignment = .right
             self.tfModelYear.textAlignment = .right
+            self.tfFuelType.textAlignment = .right
+            self.tfHSN.textAlignment = .right
+            self.tfTSN.textAlignment = .right
             self.tfVehicleRegistrationNumber.textAlignment = .right
         }else{
             self.tfVehicleBrand.textAlignment = .left
             self.tfVehicleModel.textAlignment = .left
             self.tfVehicleVarient.textAlignment = .left
             self.tfModelYear.textAlignment = .left
+            self.tfFuelType.textAlignment = .left
+            self.tfHSN.textAlignment = .left
+            self.tfTSN.textAlignment = .left
             self.tfVehicleRegistrationNumber.textAlignment = .left
         }
         
@@ -70,6 +93,9 @@ class AddVehicleViewController: UIViewController {
         self.tfVehicleVarient.text = self.objcars?.variant
         self.tfModelYear.text = self.objcars?.year
         self.tfVehicleRegistrationNumber.text = self.objcars?.registration
+        self.tfFuelType.text = self.objcars?.kraftstoffart ?? ""
+        self.tfTSN.text = self.objcars?.tsn
+        self.tfHSN.text = self.objcars?.hsn
     }
     
 
@@ -100,9 +126,9 @@ extension AddVehicleViewController {
                          "model":self.tfVehicleModel.text!,
                          "variant":self.tfVehicleVarient.text!,
                          "year":self.tfModelYear.text!,
-                         "kraftstoffart":objcars?.kraftstoffart ?? "",
-                         "hsn":self.objcars?.hsn ?? "",
-                         "tsn":self.objcars?.tsn ?? "",
+                         "kraftstoffart":self.tfFuelType.text!,
+                         "hsn":self.tfHSN.text!,
+                         "tsn":self.tfTSN.text!,
                          "registration":self.tfVehicleRegistrationNumber.text!,
                          "lang":objAppShareData.currentLanguage]as [String:Any]
         
@@ -118,7 +144,7 @@ extension AddVehicleViewController {
             if status == MessageConstant.k_StatusCode{
                 if let user_details  = response["result"] as? [String:Any] {
                    
-                    objAlert.showAlertSingleButtonCallBack(alertBtn: "OK".localized(), title: "", message: "Vehicle Added Succesfully", controller: self) {
+                    objAlert.showAlertSingleButtonCallBack(alertBtn: "OK".localized(), title: "", message: "Vehicle Added Successfully".localized(), controller: self) {
                         self.onBackPressed()
                     }
                     

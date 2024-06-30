@@ -73,10 +73,10 @@
 "Last Service :- NA" = "Letzter Service :- NA";
 "Update Service :-" = "Update-Service: -";
 "Update Service :-NA" = "Update-Service :-NA";
-"Kraftstoffart" = "Kraftstoffart";
+"Fuel type" = "Kraftstoffart";
 "HSN" = "HSN";
 "TSN" = "TSN";
-"Select Kraftstoffart" = "Bitte wählen";
+"Select Fuel type" = "Bitte wählen";
 "Enter HSN" = "Geben Sie HSN ein";
 "Enter TSN" = "Geben Sie TSN ein";
 "Add your professional photo" = "Fügen Sie Ihr professionelles Foto hinzu";
@@ -86,4 +86,25 @@
 "Are you sure you want to change the language? After changing the language, you need to quit the app and reopen it." = "Sind Sie sicher, dass Sie die Sprache ändern möchten? Nachdem Sie die Sprache geändert haben, müssen Sie die App beenden und neu öffnen.";
 "Confirm" = "Bestätigen";
 "Cancel" = "Abbrechen";
+"Validation Error" = "Validierungsfehler";
+"Choose Image" = "Bild auswählen";
+"Camera" = "Kamera";
+"Gallery" = "Galerie";
+"Cancel" = "Abbrechen";
+"Petrol" = "Benzin";
+"Diesel" = "Diesel";
+"Gas" = "Gas";
+"Your message has been sent successfully" = "Ihre Nachricht wurde erfolgreich gesendet";
+"OK" = "OK";
+"Updated Succesfully" = "Erfolgreich aktualisiert";
+"Vehicle Added Successfully" = "Fahrzeug erfolgreich hinzugefügt";
+"Reset link email sent to your registered email" = "Link-E-Mail zum Zurücksetzen an Ihre registrierte E-Mail-Adresse gesendet";
+"Email is not valid" = "Email ist ungültig";
+"NSCameraUsageDescription" = "Zum Festlegen des Profilbilds ist Kamerazugriff erforderlich";
+"Thank you very much! We will answer you as soon as possible" = "Danke schön! Wir werden Ihnen so schnell wie möglich antworten";
+"No vehicle added yet" = "Noch kein Fahrzeug hinzugefügt!!!";
+"Forgot passord success" = "Vielen Dank. Sie erhalten eine E-Mail an Ihre E-Mail-Adresse ";
+"Delete Account" = "Konto löschen";
+"Account not found please sign Up" = "Konto nicht gefunden, bitte melden Sie sich an";
+
 
