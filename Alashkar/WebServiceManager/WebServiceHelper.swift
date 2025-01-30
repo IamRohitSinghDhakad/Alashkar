@@ -27,6 +27,8 @@ struct WsUrl{
     static let url_Privacy = BASE_URL + "page/Privacy"
     static let url_About = BASE_URL + "page/About"
     static let url_UpdateProfile = BASE_URL + "update_profile"
+    static let url_GetNotificationList = BASE_URL + "get_notification"
+    
     
     
 //    static let url_GetCategory = BASE_URL + "get_category"

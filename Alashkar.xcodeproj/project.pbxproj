@@ -11,6 +11,9 @@
 		0A3A90DF2BEF618C002E9E40 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A90DC2BEF618C002E9E40 /* HomeTableViewCell.swift */; };
 		0A7031412BEF8EE900A0D1C3 /* AddVehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7031402BEF8EE900A0D1C3 /* AddVehicleViewController.swift */; };
 		3BF7ED4ACA7BCA7F4FEEDFE2 /* Pods_Alashkar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0CF59D6530F5EFF5D9DBA33 /* Pods_Alashkar.framework */; };
+		F94DFFF42CB03BEE00715A8F /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94DFFF32CB03BEE00715A8F /* NotificationModel.swift */; };
+		F970AA082CB000370082CA71 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F970AA072CB000370082CA71 /* NotificationViewController.swift */; };
+		F970AA0A2CB001000082CA71 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F970AA092CB001000082CA71 /* NotificationTableViewCell.swift */; };
 		F97778F62BECB5C500A3418E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97778F52BECB5C500A3418E /* AppDelegate.swift */; };
 		F97778FA2BECB5C500A3418E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97778F92BECB5C500A3418E /* ViewController.swift */; };
 		F97778FD2BECB5C500A3418E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F97778FC2BECB5C500A3418E /* Base */; };
@@ -64,6 +67,7 @@
 		F9A74FA42BF22CEF00808C6A /* SelectLanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A74FA32BF22CEF00808C6A /* SelectLanguageViewController.swift */; };
 		F9A74FAC2BF27BBB00808C6A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F9A74FAA2BF27BBB00808C6A /* Localizable.strings */; };
 		F9A74FB02BF27BFB00808C6A /* LocalizationSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A74FAF2BF27BFB00808C6A /* LocalizationSystem.swift */; };
+		F9B8D6AA2CB5A27D00C5C2CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9B8D6A92CB5A27D00C5C2CF /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +77,9 @@
 		529BAC35EE04412B64E5176E /* Pods-Alashkar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alashkar.release.xcconfig"; path = "Target Support Files/Pods-Alashkar/Pods-Alashkar.release.xcconfig"; sourceTree = "<group>"; };
 		B596FAC563B48AC04BF26AE8 /* Pods-Alashkar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alashkar.debug.xcconfig"; path = "Target Support Files/Pods-Alashkar/Pods-Alashkar.debug.xcconfig"; sourceTree = "<group>"; };
 		F0CF59D6530F5EFF5D9DBA33 /* Pods_Alashkar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alashkar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F94DFFF32CB03BEE00715A8F /* NotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModel.swift; sourceTree = "<group>"; };
+		F970AA072CB000370082CA71 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		F970AA092CB001000082CA71 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
 		F97778F22BECB5C500A3418E /* Alashkar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alashkar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F97778F52BECB5C500A3418E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F97778F92BECB5C500A3418E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +147,7 @@
 		F9A74FAD2BF27BCD00808C6A /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F9A74FAE2BF27BCE00808C6A /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F9A74FAF2BF27BFB00808C6A /* LocalizationSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizationSystem.swift; sourceTree = "<group>"; };
+		F9B8D6A92CB5A27D00C5C2CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F9C2B25A2C00E8EB0052E7DB /* Alashkar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Alashkar.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -194,6 +202,7 @@
 		F97778F42BECB5C500A3418E /* Alashkar */ = {
 			isa = PBXGroup;
 			children = (
+				F9B8D6A92CB5A27D00C5C2CF /* GoogleService-Info.plist */,
 				F9C2B25A2C00E8EB0052E7DB /* Alashkar.entitlements */,
 				F9A74FA92BF27A1300808C6A /* Localization */,
 				F9A74FA22BF22CDF00808C6A /* SelectLanguage */,
@@ -283,6 +292,7 @@
 				F98447092BEE085800FEAED5 /* QuizQuestionsModel.swift */,
 				F984470A2BEE085800FEAED5 /* ResultModel.swift */,
 				F984470B2BEE085800FEAED5 /* UserModel.swift */,
+				F94DFFF32CB03BEE00715A8F /* NotificationModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -294,6 +304,8 @@
 				0A3A90DC2BEF618C002E9E40 /* HomeTableViewCell.swift */,
 				0A3A90DD2BEF618C002E9E40 /* HomeTableViewCell.xib */,
 				0A7031402BEF8EE900A0D1C3 /* AddVehicleViewController.swift */,
+				F970AA072CB000370082CA71 /* NotificationViewController.swift */,
+				F970AA092CB001000082CA71 /* NotificationTableViewCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -474,6 +486,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F97778FF2BECB5C700A3418E /* Assets.xcassets in Resources */,
+				F9B8D6AA2CB5A27D00C5C2CF /* GoogleService-Info.plist in Resources */,
 				F986DACD2C0E3D75007A06E6 /* InfoPlist.strings in Resources */,
 				F9A74FAC2BF27BBB00808C6A /* Localizable.strings in Resources */,
 				F98447102BEE085800FEAED5 /* century.ttf in Resources */,
@@ -542,6 +555,7 @@
 				F98447622BEE17D900FEAED5 /* UIViewController+Container.swift in Sources */,
 				F984471D2BEE085900FEAED5 /* AnswerModel.swift in Sources */,
 				F98447132BEE085800FEAED5 /* CustomUIView.swift in Sources */,
+				F970AA082CB000370082CA71 /* NotificationViewController.swift in Sources */,
 				F97778FA2BECB5C500A3418E /* ViewController.swift in Sources */,
 				F98446F12BEE052F00FEAED5 /* ForgotPasswordViewController.swift in Sources */,
 				F97778F62BECB5C500A3418E /* AppDelegate.swift in Sources */,
@@ -553,8 +567,10 @@
 				F984471A2BEE085900FEAED5 /* NetworkRequest.swift in Sources */,
 				F9A74F9D2BF229A300808C6A /* ContactUsViewController.swift in Sources */,
 				F9A74FB02BF27BFB00808C6A /* LocalizationSystem.swift in Sources */,
+				F94DFFF42CB03BEE00715A8F /* NotificationModel.swift in Sources */,
 				F98447142BEE085800FEAED5 /* Extensions.swift in Sources */,
 				F984476B2BEE180C00FEAED5 /* AppSideMenuTableViewCell.swift in Sources */,
+				F970AA0A2CB001000082CA71 /* NotificationTableViewCell.swift in Sources */,
 				F984475B2BEE17D900FEAED5 /* Delegate.swift in Sources */,
 				0A7031412BEF8EE900A0D1C3 /* AddVehicleViewController.swift in Sources */,
 				F984475E2BEE17D900FEAED5 /* SideMenuController.swift in Sources */,
@@ -775,7 +791,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 1.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ios.Alashkar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -813,7 +829,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 1.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ios.Alashkar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

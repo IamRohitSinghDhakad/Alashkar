@@ -37,7 +37,7 @@
 "Add Vehicle" = "Fahrzeug hinzufügen";
 "Vehicle Brand" = "Hersteller";
 "Vehicle Model" = "Fahrzeug Modell";
-"Vehicle Variant" = "Karosserieform";
+"Vehicle Variant" = "Kennzeichen";
 "Vehicle Model Year" = "Baujahr";
 "Vehicle Registration Number" = "Fahrzeug-Identifikationsnummer FIN";
 "Select Language" = "Sprache auswählen";
@@ -57,7 +57,7 @@
 "Enter Message" = "Bitte geben Sie Ihre Nachricht an!";
 "Enter Brand" = "Hersteller eingeben";
 "Enter Model" = "Modell eingeben";
-"Enter Variant" = "Karosserieform eingeben";
+"Enter Variant" = "Kennzeichen eingeben";
 "Enter Model Year" = "Baujahr eingeben";
 "Enter Registration Number" = "Fahrzeug-Identifikationsnummer FIN eingeben";
 "Edit Vehicle" = "Fahrzeug bearbeiten";
@@ -106,5 +106,6 @@
 "Forgot passord success" = "Vielen Dank. Sie erhalten eine E-Mail an Ihre E-Mail-Adresse ";
 "Delete Account" = "Konto löschen";
 "Account not found please sign Up" = "Konto nicht gefunden, bitte melden Sie sich an";
+"Notification" = "Benachrichtigung";
 
 

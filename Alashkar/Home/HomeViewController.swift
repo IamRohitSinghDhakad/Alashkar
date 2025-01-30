@@ -80,6 +80,7 @@ extension HomeViewController : UITableViewDelegate, UITableViewDataSource{
         cell.lblCarNumber.text = "\(objAppShareData.registration.localized()) \(obj.registration ?? "NA")"
         cell.lblLastService.text = "\(objAppShareData.lastService.localized()) \(obj.last_service_date ?? "NA")"
         cell.lblUpdateService.text = "\(objAppShareData.nextService.localized()) \(obj.next_service_date ?? "NA")"
+        cell.lblNextServiceDate.text = "\(obj.days_remaining_for_next_service ?? "NA")"
         
         cell.btnEdit.tag = indexPath.row
         cell.btnDelete.tag = indexPath.row

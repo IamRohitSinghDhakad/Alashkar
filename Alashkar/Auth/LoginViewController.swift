@@ -97,7 +97,7 @@ extension LoginViewController {
 
             dicrParam = ["username":self.tfEmail.text!,
                          "password":self.tfPassword.text!,
-                         "device_type":"iOS",
+                         "device_type":"IOS",
                          "lang":objAppShareData.currentLanguage,
                          "device_token":objAppShareData.strFirebaseToken]as [String:Any]
         

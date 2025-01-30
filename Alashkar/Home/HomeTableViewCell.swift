@@ -17,6 +17,7 @@ class HomeTableViewCell: UITableViewCell {
     @IBOutlet weak var lblUpdateService: UILabel!
     @IBOutlet weak var btnEdit: UIButton!
     @IBOutlet weak var btnDelete: UIButton!
+    @IBOutlet weak var lblNextServiceDate: UILabel!
     
     
     override func awakeFromNib() {

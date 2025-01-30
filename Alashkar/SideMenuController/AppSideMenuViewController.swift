@@ -33,6 +33,7 @@ class AppSideMenuViewController: UIViewController {
     var strBadgeCount = ""
     
     private let menus: [SideMenuOptions] = [SideMenuOptions(menuName: "Home".localized(), menuImageName: "", menuSelectedImageName: ""),
+                                            SideMenuOptions(menuName: "Notification".localized(), menuImageName: "", menuSelectedImageName: ""),
                                             SideMenuOptions(menuName: "Profile".localized(), menuImageName: "", menuSelectedImageName: ""),
                                             SideMenuOptions(menuName: "About Us".localized(), menuImageName: "", menuSelectedImageName: ""),
                                             SideMenuOptions(menuName: "Contact Us".localized(), menuImageName: "", menuSelectedImageName: ""),
@@ -74,27 +75,31 @@ class AppSideMenuViewController: UIViewController {
         sideMenuController?.cache(viewControllerGenerator: {
             self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController")
         }, with: "0")
-        
+       
+        sideMenuController?.cache(viewControllerGenerator: {
+            self.storyboard?.instantiateViewController(withIdentifier: "NotificationViewController")
+            
+        }, with: "1")
         sideMenuController?.cache(viewControllerGenerator: {
             self.storyboard?.instantiateViewController(withIdentifier: "EditProfileViewController")
             
-        }, with: "1")
-        
-        sideMenuController?.cache(viewControllerGenerator: {
-            self.storyboard?.instantiateViewController(withIdentifier: "PrivacyPolicyViewController")
         }, with: "2")
         
         sideMenuController?.cache(viewControllerGenerator: {
-            self.storyboard?.instantiateViewController(withIdentifier: "ContactUsViewController")
+            self.storyboard?.instantiateViewController(withIdentifier: "PrivacyPolicyViewController")
         }, with: "3")
         
         sideMenuController?.cache(viewControllerGenerator: {
-            self.storyboard?.instantiateViewController(withIdentifier: "SelectLanguageViewController")
+            self.storyboard?.instantiateViewController(withIdentifier: "ContactUsViewController")
         }, with: "4")
         
         sideMenuController?.cache(viewControllerGenerator: {
-            self.storyboard?.instantiateViewController(withIdentifier: "PrivacyPolicyViewController")
+            self.storyboard?.instantiateViewController(withIdentifier: "SelectLanguageViewController")
         }, with: "5")
+        
+        sideMenuController?.cache(viewControllerGenerator: {
+            self.storyboard?.instantiateViewController(withIdentifier: "PrivacyPolicyViewController")
+        }, with: "6")
     }
     
     private func configureView() {
@@ -187,12 +192,12 @@ extension AppSideMenuViewController: UITableViewDelegate, UITableViewDataSource 
                 if let identifier = sideMenuController?.currentCacheIdentifier() {
                     print("[Example] View Controller Cache Identifier: \(identifier)")
                 }
-        case 6:
+        case 7:
             sideMenuController?.hideMenu()
             objAlert.showAlertCallBack(alertLeftBtn: "Yes".localized(), alertRightBtn: "No".localized(), title: "Logout?".localized(), message: "Do you want to log out?".localized(), controller: self) {
                 AppSharedData.sharedObject().signOut()
             }
-        case 7:
+        case 8:
             sideMenuController?.hideMenu()
             objAlert.showAlertCallBack(alertLeftBtn: "Yes".localized(), alertRightBtn: "No".localized(), title: "Delete Account?".localized(), message: "Do you want to Delete account?".localized(), controller: self) {
                 self.callWebserviceForDeleteAccount()

@@ -37,7 +37,7 @@
 "Add Vehicle" = "إضافة مركبة";
 "Vehicle Brand" = "نوع المركبة";
 "Vehicle Model" = "موديل المركبة";
-"Vehicle Variant" = "هيكل المركبة";
+"Vehicle Variant" = "رقم لوحة السيارة";
 "Vehicle Model Year" = "سنة الصنع";
 "Vehicle Registration Number" = "FIN الرقم التعريفي للمركبة";
 "Select Language" = "اختيار اللغة";
@@ -106,6 +106,7 @@
 "Forgot passord success" = "شكرًا لك. ستصلك رسالة على عنوان بريدك الإلكتروني";
 "Delete Account" = "حذف الحساب";
 "Account not found please sign Up" = "لم يتم العثور على الحساب يرجى التسجيل";
+"Notification" = "إشعار";
 
 
 
